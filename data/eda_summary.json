@@ -1,0 +1,227 @@
+{
+  "initial_records": 5840,
+  "valid_records": 5840,
+  "removed_records": 0,
+  "total_units_sold": 228496,
+  "total_revenue": 22204801.54,
+  "avg_daily_order_size": 39.13,
+  "unique_products": 8,
+  "top_products": [
+    {
+      "product_id": "PRD-107",
+      "product_name": "MagSafe Fast Wireless Charger Pad",
+      "category": "Accessories",
+      "units_sold": 46265,
+      "total_revenue": 1351968.85,
+      "avg_price": 29.41
+    },
+    {
+      "product_id": "PRD-104",
+      "product_name": "USB-C Dual HDMI Multiport Dock",
+      "category": "Accessories",
+      "units_sold": 39002,
+      "total_revenue": 1898589.98,
+      "avg_price": 49.02
+    },
+    {
+      "product_id": "PRD-101",
+      "product_name": "Wireless Noise-Canceling Headphones",
+      "category": "Audio",
+      "units_sold": 32574,
+      "total_revenue": 4757726.76,
+      "avg_price": 147.09
+    },
+    {
+      "product_id": "PRD-105",
+      "product_name": "Smart Fitness & Heart Rate Tracker",
+      "category": "Wearables",
+      "units_sold": 27650,
+      "total_revenue": 2155143.5,
+      "avg_price": 78.44
+    },
+    {
+      "product_id": "PRD-102",
+      "product_name": "Ergonomic Mechanical Keyboard",
+      "category": "Peripherals",
+      "units_sold": 25905,
+      "total_revenue": 2271750.45,
+      "avg_price": 88.25
+    },
+    {
+      "product_id": "PRD-106",
+      "product_name": "High-Speed NVMe 1TB Portable SSD",
+      "category": "Storage",
+      "units_sold": 21998,
+      "total_revenue": 2572022.02,
+      "avg_price": 117.67
+    },
+    {
+      "product_id": "PRD-108",
+      "product_name": "Studio Condenser Podcast Microphone",
+      "category": "Audio",
+      "units_sold": 18489,
+      "total_revenue": 2341531.11,
+      "avg_price": 127.48
+    },
+    {
+      "product_id": "PRD-103",
+      "product_name": "Ultra-HD 4K 27-inch Monitor",
+      "category": "Displays",
+      "units_sold": 16613,
+      "total_revenue": 4856068.87,
+      "avg_price": 294.2
+    }
+  ],
+  "monthly_patterns": [
+    {
+      "month": "2024-01",
+      "units": 7351,
+      "revenue": 709567.49
+    },
+    {
+      "month": "2024-02",
+      "units": 7555,
+      "revenue": 732454.95
+    },
+    {
+      "month": "2024-03",
+      "units": 9171,
+      "revenue": 887227.79
+    },
+    {
+      "month": "2024-04",
+      "units": 10165,
+      "revenue": 966494.35
+    },
+    {
+      "month": "2024-05",
+      "units": 10673,
+      "revenue": 1060299.27
+    },
+    {
+      "month": "2024-06",
+      "units": 10711,
+      "revenue": 1072579.39
+    },
+    {
+      "month": "2024-07",
+      "units": 11111,
+      "revenue": 1079488.89
+    },
+    {
+      "month": "2024-08",
+      "units": 10426,
+      "revenue": 1015999.74
+    },
+    {
+      "month": "2024-09",
+      "units": 9266,
+      "revenue": 879669.34
+    },
+    {
+      "month": "2024-10",
+      "units": 8173,
+      "revenue": 793110.77
+    },
+    {
+      "month": "2024-11",
+      "units": 10490,
+      "revenue": 999394.6
+    },
+    {
+      "month": "2024-12",
+      "units": 9537,
+      "revenue": 925856.13
+    },
+    {
+      "month": "2025-01",
+      "units": 7258,
+      "revenue": 705597.42
+    },
+    {
+      "month": "2025-02",
+      "units": 6876,
+      "revenue": 684496.74
+    },
+    {
+      "month": "2025-03",
+      "units": 9287,
+      "revenue": 899336.13
+    },
+    {
+      "month": "2025-04",
+      "units": 9667,
+      "revenue": 947978.83
+    },
+    {
+      "month": "2025-05",
+      "units": 11083,
+      "revenue": 1092946.67
+    },
+    {
+      "month": "2025-06",
+      "units": 10699,
+      "revenue": 1076873.01
+    },
+    {
+      "month": "2025-07",
+      "units": 11103,
+      "revenue": 1080132.97
+    },
+    {
+      "month": "2025-08",
+      "units": 10607,
+      "revenue": 1029747.43
+    },
+    {
+      "month": "2025-09",
+      "units": 9074,
+      "revenue": 877223.26
+    },
+    {
+      "month": "2025-10",
+      "units": 8674,
+      "revenue": 816604.26
+    },
+    {
+      "month": "2025-11",
+      "units": 10235,
+      "revenue": 975180.15
+    },
+    {
+      "month": "2025-12",
+      "units": 9304,
+      "revenue": 896541.96
+    }
+  ],
+  "day_of_week_patterns": [
+    {
+      "day": "Monday",
+      "avg_units": 34.4
+    },
+    {
+      "day": "Tuesday",
+      "avg_units": 34.0
+    },
+    {
+      "day": "Wednesday",
+      "avg_units": 33.7
+    },
+    {
+      "day": "Thursday",
+      "avg_units": 33.4
+    },
+    {
+      "day": "Friday",
+      "avg_units": 45.4
+    },
+    {
+      "day": "Saturday",
+      "avg_units": 46.1
+    },
+    {
+      "day": "Sunday",
+      "avg_units": 47.0
+    }
+  ]
+}

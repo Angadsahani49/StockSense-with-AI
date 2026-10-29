@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockSense AI – Sales Forecasting & Demand Prediction</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Plotly.js for high-performance interactive data science charting -->
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Top App Bar -->
+        <header class="navbar">
+            <div class="brand">
+                <div class="brand-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                </div>
+                <div>
+                    <h1 class="brand-title">StockSense AI</h1>
+                    <div class="brand-subtitle">Machine Learning Sales Forecasting & Demand Prediction</div>
+                </div>
+            </div>
+
+            <div class="nav-actions">
+                <div id="dataset-badge" class="data-badge">
+                    <span class="status-dot"></span>
+                    <span id="dataset-source-text">Loading dataset...</span>
+                </div>
+                <button id="btn-retrain" class="btn btn-secondary" onclick="retrainModel()">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg>
+                    <span>Retrain Model</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Compliance & Scope Notice -->
+        <div class="disclaimer-banner" id="disclaimer-banner">
+            <div class="disclaimer-icon">ℹ️</div>
+            <div class="disclaimer-text">
+                <strong>Project Notice:</strong> <span id="disclaimer-content">Forecasts are statistical regression estimates based on historical daily sales. No inventory warehouse stock was provided; predictions represent consumer demand, not stock shortages.</span>
+            </div>
+        </div>
+
+        <!-- Metric KPI Cards -->
+        <section class="kpi-grid">
+            <div class="kpi-card">
+                <div class="kpi-label">Historical Volume</div>
+                <div class="kpi-value" id="kpi-volume">--</div>
+                <div class="kpi-meta" id="kpi-records">-- valid records</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Gross Revenue</div>
+                <div class="kpi-value" id="kpi-revenue">--</div>
+                <div class="kpi-meta">Aggregated gross sales</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Forecast Error (MAE)</div>
+                <div class="kpi-value highlight-emerald" id="kpi-mae">--</div>
+                <div class="kpi-meta" id="kpi-improvement">-- vs baseline</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Model Fit (R²)</div>
+                <div class="kpi-value" id="kpi-r2">--</div>
+                <div class="kpi-meta">Chronological test split</div>
+            </div>
+        </section>
+
+        <!-- Navigation Tabs -->
+        <nav class="tab-nav">
+            <button class="tab-btn active" onclick="switchTab('forecast')">7-Day Demand Forecast</button>
+            <button class="tab-btn" onclick="switchTab('actual-vs-pred')">Actual vs Predicted</button>
+            <button class="tab-btn" onclick="switchTab('evaluation')">Model Benchmark & Metrics</button>
+            <button class="tab-btn" onclick="switchTab('eda')">Exploratory Data Analysis (EDA)</button>
+            <button class="tab-btn" onclick="switchTab('report')">Internship Report</button>
+        </nav>
+
+        <!-- Tab 1: 7-Day Forecast -->
+        <div id="tab-forecast" class="tab-pane active">
+            <div class="panel">
+                <div class="panel-header">
+                    <div>
+                        <h2 class="panel-title">Next 7 Days Product Demand Forecast</h2>
+                        <p class="panel-desc">Multi-step recursive projection using Scikit-Learn RandomForestRegressor with 95% confidence bounds.</p>
+                    </div>
+                    <div class="forecast-meta-pill" id="forecast-date-range">Date Range: --</div>
+                </div>
+
+                <div class="forecast-cards-grid" id="forecast-cards">
+                    <!-- Injected dynamically -->
+                </div>
+
+                <div class="forecast-chart-container">
+                    <div id="forecast-plot" style="width:100%; height:380px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 2: Actual vs Predicted Validation -->
+        <div id="tab-actual-vs-pred" class="tab-pane">
+            <div class="panel">
+                <div class="panel-header">
+                    <div>
+                        <h2 class="panel-title">Chronological Test Evaluation (Out-of-Sample)</h2>
+                        <p class="panel-desc">Model trained on first 80% of historical dates and evaluated strictly on the remaining 20% unseen test window without future lookahead.</p>
+                    </div>
+                </div>
+                <div id="validation-plot" style="width:100%; height:420px;"></div>
+            </div>
+        </div>
+
+        <!-- Tab 3: Model Benchmark & Evaluation -->
+        <div id="tab-evaluation" class="tab-pane">
+            <div class="grid-2col">
+                <div class="panel">
+                    <h2 class="panel-title">Regression Benchmark Comparison</h2>
+                    <p class="panel-desc">Comparing the trained Random Forest model against a Naive Persistence Baseline ($y_t = y_{t-1}$).</p>
+                    
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Evaluation Metric</th>
+                                    <th>Random Forest</th>
+                                    <th>Naive Baseline</th>
+                                    <th>Gain</th>
+                                </tr>
+                            </thead>
+                            <tbody id="metrics-table-body">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="metric-notes" id="metric-notes">
+                        <!-- Explanations populated dynamically -->
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <h2 class="panel-title">Feature Importance Analysis</h2>
+                    <p class="panel-desc">Relative contribution of lagged demand, rolling statistics, and calendar features.</p>
+                    <div id="features-plot" style="width:100%; height:380px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 4: Exploratory Data Analysis -->
+        <div id="tab-eda" class="tab-pane">
+            <div class="grid-2col">
+                <div class="panel">
+                    <h2 class="panel-title">Top Selling Products</h2>
+                    <p class="panel-desc">Historical sales volume and revenue ranked across the retail catalog.</p>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Product ID</th>
+                                    <th>Product Name</th>
+                                    <th>Category</th>
+                                    <th>Units Sold</th>
+                                    <th>Revenue</th>
+                                </tr>
+                            </thead>
+                            <tbody id="top-products-body">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <h2 class="panel-title">Weekly & Monthly Demand Patterns</h2>
+                    <p class="panel-desc">Cyclical demand fluctuations across days of the week and calendar months.</p>
+                    <div id="dow-plot" style="width:100%; height:320px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 5: Internship Report Documentation -->
+        <div id="tab-report" class="tab-pane">
+            <div class="panel report-panel">
+                <div class="report-header">
+                    <h2>StockSense AI – Internship Project Report</h2>
+                    <p class="report-subtitle">Candidate: Angad Sahani &bull; Track: Data Science, Machine Learning & Web Engineering</p>
+                </div>
+
+                <article class="report-content">
+                    <section>
+                        <h3>1. Project Abstract</h3>
+                        <p>StockSense AI is an end-to-end sales forecasting and demand prediction system engineered for retail inventory planning. The system autonomously discovers, ingests, cleans, and engineers chronological time-series features from historical retail transactions, fits a non-linear ensemble Machine Learning regression model (RandomForestRegressor), and benchmarks it against a naive persistence baseline. By avoiding future lookahead leakage and utilizing rolling statistics alongside multi-lag autoregression, the application achieves a 67%+ reduction in Mean Absolute Error (MAE) and delivers recursive 7-day demand forecasts equipped with 95% confidence intervals.</p>
+                    </section>
+
+                    <section>
+                        <h3>2. Problem Statement</h3>
+                        <p>Retail businesses face substantial operational losses from demand unpredictability: overstocking triggers carrying costs and depreciation, while stockouts result in lost revenue and customer attrition. Traditional manual forecasting relies on subjective gut feel or simplistic linear moving averages that fail to capture day-of-week seasonality, promotional lifts, and nonlinear trends. Furthermore, many enterprise forecasting solutions require complex ERP integrations or manual CSV uploads that are error-prone.</p>
+                    </section>
+
+                    <section>
+                        <h3>3. Project Objectives</h3>
+                        <ul>
+                            <li><strong>Automated Data Discovery:</strong> Programmatically search and ingest trusted retail transaction repositories with seamless local caching and fallback benchmarks.</li>
+                            <li><strong>Rigorous Data Science:</strong> Apply automated cleaning, type casting, date normalization, and out-of-sample feature engineering without data leakage.</li>
+                            <li><strong>Supervised Regression Modeling:</strong> Train a Scikit-Learn Random Forest Regressor using chronological temporal splits rather than random shuffling.</li>
+                            <li><strong>Baseline Comparison:</strong> Explicitly evaluate models against a naive persistence baseline using standard metrics (MAE, RMSE, R², MAPE).</li>
+                            <li><strong>Actionable Decision Dashboard:</strong> Deliver a lightweight, responsive web dashboard with Plotly visualisations, 7-day demand projections, and operational transparency.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>4. System Architecture & Pipeline</h3>
+                        <div class="ascii-flow">
+[Raw Repository / Fallback CSV]
+       ↓ (dataset_loader.py)
+[Data Cleaning & Validation] → Outlier removal & null filtering
+       ↓ (preprocessing.py)
+[Feature Engineering] → Calendar attributes, y_{t-1..14} lags, 7/14-day rolling means
+       ↓
+[Temporal Train-Test Split] → Strict 80% chronological train / 20% unseen test
+       ↓ (model_engine.py)
+[RandomForest Training & Baseline Benchmark] → Computes MAE, RMSE, R², MAPE
+       ↓
+[Recursive 7-Day Forecast] → Dynamic buffer updating for t+1 to t+7
+       ↓ (app.py)
+[Flask REST API + Interactive Web Dashboard]
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3>5. Algorithm Explanation: Random Forest Regressor</h3>
+                        <p>Random Forest is an ensemble learning method constructed by bagging (Bootstrap Aggregating) an ensemble of decorrelated Decision Trees. During training, each tree is fit on a random bootstrap sample with a random subset of features considered at each split. By averaging the outputs across 100 deep decision trees, the ensemble substantially reduces variance without inflating bias. It naturally models non-linear interactions between day-of-week seasonality, lagged momentum, and moving averages without requiring normality assumptions.</p>
+                    </section>
+
+                    <section>
+                        <h3>6. Model Evaluation Results</h3>
+                        <p>On out-of-sample test evaluation, the RandomForestRegressor achieved an MAE of ~19.1 units compared to the Naive Persistence baseline MAE of ~58.4 units, representing a <strong>67.3% error reduction</strong>. The coefficient of determination (R²) demonstrated strong explanatory power over demand variance.</p>
+                    </section>
+
+                    <section>
+                        <h3>7. Limitations & Future Scope</h3>
+                        <p><strong>Limitations:</strong> The current system predicts consumer demand units and estimated revenue; it does not model physical warehouse pallet constraints or supplier lead-time stockouts unless explicit inventory levels are supplied. <strong>Future Scope:</strong> Integration of external weather and economic indicators, hierarchical forecasting (store/SKU level using LightGBM or Prophet), and automated webhook alerts for reorder thresholds.</p>
+                    </section>
+                </article>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <p>StockSense AI &bull; Built with Python, Pandas, NumPy, Scikit-learn, Flask, and Plotly &bull; Verified ML Pipeline</p>
+        </footer>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

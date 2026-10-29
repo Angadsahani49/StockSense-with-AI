@@ -1,0 +1,540 @@
+{
+  "model_name": "RandomForestRegressor (100 Estimators, max_depth=12)",
+  "baseline_name": "Naive Persistence Benchmark (Yesterday's Sales y_{t-1})",
+  "training_samples": 572,
+  "test_samples": 144,
+  "train_period": "2024-01-15 to 2025-08-08",
+  "test_period": "2025-08-09 to 2025-12-30",
+  "metrics": {
+    "random_forest": {
+      "mae": 19.12,
+      "rmse": 23.9,
+      "r2_score": 0.891,
+      "mape": 6.25
+    },
+    "baseline": {
+      "mae": 58.44,
+      "rmse": 81.66,
+      "r2_score": -0.268,
+      "mape": 18.17
+    },
+    "improvement": {
+      "mae_reduction_percent": 67.29,
+      "rmse_reduction_percent": 70.73,
+      "verdict": "RandomForest significantly outperforms naive persistence baseline by capturing both non-linear weekly seasonality and moving average momentum."
+    }
+  },
+  "metric_explanations": {
+    "mae": "Mean Absolute Error: Average absolute units the model's prediction differs from actual sales. Lower is better.",
+    "rmse": "Root Mean Squared Error: Penalizes larger prediction errors more heavily. Useful for safety stock planning.",
+    "r2_score": "Coefficient of Determination: Proportion of sales variance explained by the model (1.0 = perfect fit).",
+    "mape": "Mean Absolute Percentage Error: Relative percentage deviation of predictions across all demand levels."
+  },
+  "feature_importance": [
+    {
+      "feature": "day_of_week",
+      "importance": 32.39,
+      "description": "Day of the week (Monday=0 to Sunday=6), tracking weekend vs weekday patterns."
+    },
+    {
+      "feature": "Is_Promotion",
+      "importance": 23.53,
+      "description": "Active promotional campaign indicator causing sales spikes."
+    },
+    {
+      "feature": "rolling_mean_7",
+      "importance": 11.09,
+      "description": "7-day moving average, smoothing out day-to-day noise."
+    },
+    {
+      "feature": "rolling_mean_14",
+      "importance": 10.55,
+      "description": "14-day moving average, capturing fortnightly sales trend."
+    },
+    {
+      "feature": "lag_14",
+      "importance": 8.7,
+      "description": "Sales 14 days prior (t-14), capturing bi-weekly seasonality."
+    },
+    {
+      "feature": "lag_7",
+      "importance": 6.43,
+      "description": "Same day last week (t-7), capturing primary weekly seasonality."
+    },
+    {
+      "feature": "month",
+      "importance": 3.63,
+      "description": "Calendar month (1-12) capturing annual seasonal cycles."
+    },
+    {
+      "feature": "lag_1",
+      "importance": 1.2,
+      "description": "Previous day's sales (t-1), capturing immediate short-term momentum."
+    },
+    {
+      "feature": "lag_3",
+      "importance": 0.8,
+      "description": "Sales 3 days prior (t-3), supporting weekly autoregression."
+    },
+    {
+      "feature": "day_of_month",
+      "importance": 0.53,
+      "description": "Calendar day (1-31) capturing pay-day and end-of-month effects."
+    },
+    {
+      "feature": "rolling_std_7",
+      "importance": 0.48,
+      "description": "7-day moving volatility/dispersion of consumer demand."
+    },
+    {
+      "feature": "lag_2",
+      "importance": 0.4,
+      "description": "Sales 2 days prior (t-2), supporting short-range curvature."
+    },
+    {
+      "feature": "quarter",
+      "importance": 0.17,
+      "description": "Financial quarter (Q1-Q4) capturing macro seasonal periods."
+    },
+    {
+      "feature": "is_weekend",
+      "importance": 0.11,
+      "description": "Binary flag for Saturday/Sunday shopping surges."
+    }
+  ],
+  "actual_vs_predicted": [
+    {
+      "date": "2025-11-01",
+      "actual": 362,
+      "rf_predicted": 335.6,
+      "baseline_predicted": 401
+    },
+    {
+      "date": "2025-11-02",
+      "actual": 389,
+      "rf_predicted": 336.0,
+      "baseline_predicted": 362
+    },
+    {
+      "date": "2025-11-03",
+      "actual": 272,
+      "rf_predicted": 241.5,
+      "baseline_predicted": 389
+    },
+    {
+      "date": "2025-11-04",
+      "actual": 282,
+      "rf_predicted": 248.8,
+      "baseline_predicted": 272
+    },
+    {
+      "date": "2025-11-05",
+      "actual": 431,
+      "rf_predicted": 323.3,
+      "baseline_predicted": 282
+    },
+    {
+      "date": "2025-11-06",
+      "actual": 298,
+      "rf_predicted": 263.1,
+      "baseline_predicted": 431
+    },
+    {
+      "date": "2025-11-07",
+      "actual": 372,
+      "rf_predicted": 344.1,
+      "baseline_predicted": 298
+    },
+    {
+      "date": "2025-11-08",
+      "actual": 383,
+      "rf_predicted": 359.0,
+      "baseline_predicted": 372
+    },
+    {
+      "date": "2025-11-09",
+      "actual": 356,
+      "rf_predicted": 351.6,
+      "baseline_predicted": 383
+    },
+    {
+      "date": "2025-11-10",
+      "actual": 301,
+      "rf_predicted": 262.9,
+      "baseline_predicted": 356
+    },
+    {
+      "date": "2025-11-11",
+      "actual": 270,
+      "rf_predicted": 289.1,
+      "baseline_predicted": 301
+    },
+    {
+      "date": "2025-11-12",
+      "actual": 259,
+      "rf_predicted": 263.2,
+      "baseline_predicted": 270
+    },
+    {
+      "date": "2025-11-13",
+      "actual": 281,
+      "rf_predicted": 249.1,
+      "baseline_predicted": 259
+    },
+    {
+      "date": "2025-11-14",
+      "actual": 353,
+      "rf_predicted": 360.5,
+      "baseline_predicted": 281
+    },
+    {
+      "date": "2025-11-15",
+      "actual": 359,
+      "rf_predicted": 362.2,
+      "baseline_predicted": 353
+    },
+    {
+      "date": "2025-11-16",
+      "actual": 362,
+      "rf_predicted": 365.1,
+      "baseline_predicted": 359
+    },
+    {
+      "date": "2025-11-17",
+      "actual": 274,
+      "rf_predicted": 260.0,
+      "baseline_predicted": 362
+    },
+    {
+      "date": "2025-11-18",
+      "actual": 267,
+      "rf_predicted": 261.6,
+      "baseline_predicted": 274
+    },
+    {
+      "date": "2025-11-19",
+      "actual": 262,
+      "rf_predicted": 257.0,
+      "baseline_predicted": 267
+    },
+    {
+      "date": "2025-11-20",
+      "actual": 268,
+      "rf_predicted": 265.3,
+      "baseline_predicted": 262
+    },
+    {
+      "date": "2025-11-21",
+      "actual": 339,
+      "rf_predicted": 347.4,
+      "baseline_predicted": 268
+    },
+    {
+      "date": "2025-11-22",
+      "actual": 314,
+      "rf_predicted": 354.0,
+      "baseline_predicted": 339
+    },
+    {
+      "date": "2025-11-23",
+      "actual": 378,
+      "rf_predicted": 353.2,
+      "baseline_predicted": 314
+    },
+    {
+      "date": "2025-11-24",
+      "actual": 368,
+      "rf_predicted": 383.8,
+      "baseline_predicted": 378
+    },
+    {
+      "date": "2025-11-25",
+      "actual": 388,
+      "rf_predicted": 380.2,
+      "baseline_predicted": 368
+    },
+    {
+      "date": "2025-11-26",
+      "actual": 341,
+      "rf_predicted": 381.5,
+      "baseline_predicted": 388
+    },
+    {
+      "date": "2025-11-27",
+      "actual": 357,
+      "rf_predicted": 393.2,
+      "baseline_predicted": 341
+    },
+    {
+      "date": "2025-11-28",
+      "actual": 504,
+      "rf_predicted": 524.4,
+      "baseline_predicted": 357
+    },
+    {
+      "date": "2025-11-29",
+      "actual": 494,
+      "rf_predicted": 520.3,
+      "baseline_predicted": 504
+    },
+    {
+      "date": "2025-11-30",
+      "actual": 351,
+      "rf_predicted": 344.9,
+      "baseline_predicted": 494
+    },
+    {
+      "date": "2025-12-01",
+      "actual": 239,
+      "rf_predicted": 278.3,
+      "baseline_predicted": 351
+    },
+    {
+      "date": "2025-12-02",
+      "actual": 236,
+      "rf_predicted": 273.4,
+      "baseline_predicted": 239
+    },
+    {
+      "date": "2025-12-03",
+      "actual": 243,
+      "rf_predicted": 272.7,
+      "baseline_predicted": 236
+    },
+    {
+      "date": "2025-12-04",
+      "actual": 249,
+      "rf_predicted": 274.5,
+      "baseline_predicted": 243
+    },
+    {
+      "date": "2025-12-05",
+      "actual": 481,
+      "rf_predicted": 516.5,
+      "baseline_predicted": 249
+    },
+    {
+      "date": "2025-12-06",
+      "actual": 357,
+      "rf_predicted": 341.0,
+      "baseline_predicted": 481
+    },
+    {
+      "date": "2025-12-07",
+      "actual": 471,
+      "rf_predicted": 522.4,
+      "baseline_predicted": 357
+    },
+    {
+      "date": "2025-12-08",
+      "actual": 348,
+      "rf_predicted": 377.1,
+      "baseline_predicted": 471
+    },
+    {
+      "date": "2025-12-09",
+      "actual": 259,
+      "rf_predicted": 280.5,
+      "baseline_predicted": 348
+    },
+    {
+      "date": "2025-12-10",
+      "actual": 257,
+      "rf_predicted": 279.5,
+      "baseline_predicted": 259
+    },
+    {
+      "date": "2025-12-11",
+      "actual": 255,
+      "rf_predicted": 278.3,
+      "baseline_predicted": 257
+    },
+    {
+      "date": "2025-12-12",
+      "actual": 345,
+      "rf_predicted": 351.0,
+      "baseline_predicted": 255
+    },
+    {
+      "date": "2025-12-13",
+      "actual": 336,
+      "rf_predicted": 354.3,
+      "baseline_predicted": 345
+    },
+    {
+      "date": "2025-12-14",
+      "actual": 342,
+      "rf_predicted": 353.4,
+      "baseline_predicted": 336
+    },
+    {
+      "date": "2025-12-15",
+      "actual": 238,
+      "rf_predicted": 251.1,
+      "baseline_predicted": 342
+    },
+    {
+      "date": "2025-12-16",
+      "actual": 348,
+      "rf_predicted": 368.6,
+      "baseline_predicted": 238
+    },
+    {
+      "date": "2025-12-17",
+      "actual": 234,
+      "rf_predicted": 245.3,
+      "baseline_predicted": 348
+    },
+    {
+      "date": "2025-12-18",
+      "actual": 359,
+      "rf_predicted": 372.5,
+      "baseline_predicted": 234
+    },
+    {
+      "date": "2025-12-19",
+      "actual": 482,
+      "rf_predicted": 530.6,
+      "baseline_predicted": 359
+    },
+    {
+      "date": "2025-12-20",
+      "actual": 344,
+      "rf_predicted": 347.6,
+      "baseline_predicted": 482
+    },
+    {
+      "date": "2025-12-21",
+      "actual": 336,
+      "rf_predicted": 355.4,
+      "baseline_predicted": 344
+    },
+    {
+      "date": "2025-12-22",
+      "actual": 248,
+      "rf_predicted": 270.3,
+      "baseline_predicted": 336
+    },
+    {
+      "date": "2025-12-23",
+      "actual": 245,
+      "rf_predicted": 260.6,
+      "baseline_predicted": 248
+    },
+    {
+      "date": "2025-12-24",
+      "actual": 257,
+      "rf_predicted": 251.5,
+      "baseline_predicted": 245
+    },
+    {
+      "date": "2025-12-25",
+      "actual": 260,
+      "rf_predicted": 252.5,
+      "baseline_predicted": 257
+    },
+    {
+      "date": "2025-12-26",
+      "actual": 333,
+      "rf_predicted": 347.5,
+      "baseline_predicted": 260
+    },
+    {
+      "date": "2025-12-27",
+      "actual": 347,
+      "rf_predicted": 349.1,
+      "baseline_predicted": 333
+    },
+    {
+      "date": "2025-12-28",
+      "actual": 336,
+      "rf_predicted": 345.2,
+      "baseline_predicted": 347
+    },
+    {
+      "date": "2025-12-29",
+      "actual": 257,
+      "rf_predicted": 250.2,
+      "baseline_predicted": 336
+    },
+    {
+      "date": "2025-12-30",
+      "actual": 262,
+      "rf_predicted": 250.0,
+      "baseline_predicted": 257
+    }
+  ],
+  "future_forecast": [
+    {
+      "step": 1,
+      "date": "2025-12-31",
+      "day_name": "Wednesday",
+      "predicted_units": 251.9,
+      "lower_bound": 216.8,
+      "upper_bound": 287.1,
+      "estimated_revenue": 29017.09,
+      "is_weekend": false
+    },
+    {
+      "step": 2,
+      "date": "2026-01-01",
+      "day_name": "Thursday",
+      "predicted_units": 239.2,
+      "lower_bound": 204.0,
+      "upper_bound": 274.3,
+      "estimated_revenue": 27545.07,
+      "is_weekend": false
+    },
+    {
+      "step": 3,
+      "date": "2026-01-02",
+      "day_name": "Friday",
+      "predicted_units": 282.7,
+      "lower_bound": 247.6,
+      "upper_bound": 317.8,
+      "estimated_revenue": 32558.75,
+      "is_weekend": false
+    },
+    {
+      "step": 4,
+      "date": "2026-01-03",
+      "day_name": "Saturday",
+      "predicted_units": 269.6,
+      "lower_bound": 234.5,
+      "upper_bound": 304.7,
+      "estimated_revenue": 31053.32,
+      "is_weekend": true
+    },
+    {
+      "step": 5,
+      "date": "2026-01-04",
+      "day_name": "Sunday",
+      "predicted_units": 270.6,
+      "lower_bound": 235.5,
+      "upper_bound": 305.8,
+      "estimated_revenue": 31171.31,
+      "is_weekend": true
+    },
+    {
+      "step": 6,
+      "date": "2026-01-05",
+      "day_name": "Monday",
+      "predicted_units": 213.3,
+      "lower_bound": 178.2,
+      "upper_bound": 248.4,
+      "estimated_revenue": 24568.18,
+      "is_weekend": false
+    },
+    {
+      "step": 7,
+      "date": "2026-01-06",
+      "day_name": "Tuesday",
+      "predicted_units": 202.5,
+      "lower_bound": 167.3,
+      "upper_bound": 237.6,
+      "estimated_revenue": 23321.4,
+      "is_weekend": false
+    }
+  ],
+  "disclaimer": "DISCLAIMER: Demand forecasts are algorithmic statistical estimates based on historical patterns, not guaranteed future sales. Factors such as unforeseen supply disruptions, macro shifts, or marketing changes may alter real-world demand."
+}
