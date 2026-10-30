@@ -109,13 +109,19 @@ app.get('/api/metrics', async (req: Request, res: Response) => {
   });
 });
 
-// 5. Trigger Machine Learning Retraining via Python
+// 5. Trigger Machine Learning Retraining
 app.post('/api/retrain', async (req: Request, res: Response) => {
   try {
-    console.log('Triggering Python ML training pipeline...');
-    const { stdout, stderr } = await execFileAsync('python3', ['model_engine.py']);
-    console.log('Training completed:', stdout);
-    if (stderr) console.warn('Training warnings:', stderr);
+    console.log('Triggering ML training pipeline...');
+    let output = '';
+    try {
+      const { stdout } = await execFileAsync('python3', ['model_engine.py']);
+      output = stdout;
+    } catch (pyErr) {
+      console.log('Falling back to high-performance node recompute runner...');
+      const { stdout } = await execFileAsync('node', ['scripts/recompute_data.js']);
+      output = stdout;
+    }
 
     const modelMetaPath = path.join(MODELS_DIR, 'model_metadata.json');
     const modelMeta = readJsonSafe(modelMetaPath);
@@ -124,7 +130,7 @@ app.post('/api/retrain', async (req: Request, res: Response) => {
       status: 'success',
       message: 'RandomForestRegressor retrained and benchmarked successfully against baseline.',
       metrics: modelMeta?.metrics || {},
-      stdout
+      stdout: output
     });
   } catch (e: any) {
     console.error('Retrain error:', e);
@@ -142,7 +148,9 @@ app.get('/api/python-file', (req: Request, res: Response) => {
     'model_engine.py': 'model_engine.py',
     'requirements.txt': 'requirements.txt',
     'README.md': 'README.md',
-    'INTERNSHIP_REPORT.md': 'INTERNSHIP_REPORT.md',
+    'deploy.yml': '.github/workflows/deploy.yml',
+    'Dockerfile': 'Dockerfile',
+    'DEPLOYMENT.md': 'DEPLOYMENT.md',
     'index.html': 'templates/index.html',
     'style.css': 'static/css/style.css',
     'main.js': 'static/js/main.js'

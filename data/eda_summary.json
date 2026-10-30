@@ -1,227 +1,3579 @@
 {
-  "initial_records": 5840,
-  "valid_records": 5840,
+  "initial_records": 11680,
+  "valid_records": 11680,
   "removed_records": 0,
-  "total_units_sold": 228496,
-  "total_revenue": 22204801.54,
-  "avg_daily_order_size": 39.13,
-  "unique_products": 8,
+  "total_units_sold": 464530,
+  "total_revenue": 44619657.27,
+  "avg_daily_order_size": 39.77,
+  "unique_products": 16,
   "top_products": [
+    {
+      "product_id": "PRD-112",
+      "product_name": "65W GaN Dual-Port Compact Travel Charger",
+      "category": "Accessories",
+      "units_sold": 51037,
+      "total_revenue": 2038926.96,
+      "avg_price": 40.23,
+      "min_price": 33.99,
+      "max_price": 41.97,
+      "latest_price": 41.97,
+      "current_stock": 610,
+      "reorder_point": 220,
+      "lead_time_days": 2,
+      "stock_status": "Healthy Stock",
+      "stock_badge": "healthy",
+      "recent_daily_rate": 72.1,
+      "days_of_stock": 8,
+      "price_history": [
+        {
+          "month": "2024-01",
+          "avg_price": 39.6,
+          "min_price": 33.99,
+          "max_price": 39.99,
+          "units_sold": 1606,
+          "revenue": 63467.94
+        },
+        {
+          "month": "2024-02",
+          "avg_price": 39.78,
+          "min_price": 33.99,
+          "max_price": 39.99,
+          "units_sold": 1651,
+          "revenue": 65531.49
+        },
+        {
+          "month": "2024-03",
+          "avg_price": 39.41,
+          "min_price": 33.99,
+          "max_price": 39.99,
+          "units_sold": 2106,
+          "revenue": 82424.94
+        },
+        {
+          "month": "2024-04",
+          "avg_price": 39.71,
+          "min_price": 34.26,
+          "max_price": 40.31,
+          "units_sold": 2183,
+          "revenue": 86320.88
+        },
+        {
+          "month": "2024-05",
+          "avg_price": 39.33,
+          "min_price": 34.26,
+          "max_price": 40.31,
+          "units_sold": 2530,
+          "revenue": 98384.55
+        },
+        {
+          "month": "2024-06",
+          "avg_price": 39.5,
+          "min_price": 34.26,
+          "max_price": 40.31,
+          "units_sold": 2447,
+          "revenue": 95789.02
+        },
+        {
+          "month": "2024-07",
+          "avg_price": 40.24,
+          "min_price": 34.54,
+          "max_price": 40.63,
+          "units_sold": 2326,
+          "revenue": 93250.84
+        },
+        {
+          "month": "2024-08",
+          "avg_price": 39.25,
+          "min_price": 34.54,
+          "max_price": 40.63,
+          "units_sold": 2407,
+          "revenue": 93344.62
+        },
+        {
+          "month": "2024-09",
+          "avg_price": 40.02,
+          "min_price": 34.54,
+          "max_price": 40.63,
+          "units_sold": 1963,
+          "revenue": 78112.39
+        },
+        {
+          "month": "2024-10",
+          "avg_price": 40.75,
+          "min_price": 34.81,
+          "max_price": 40.95,
+          "units_sold": 1738,
+          "revenue": 70753.58
+        },
+        {
+          "month": "2024-11",
+          "avg_price": 39.11,
+          "min_price": 34.81,
+          "max_price": 40.95,
+          "units_sold": 2351,
+          "revenue": 90888.67
+        },
+        {
+          "month": "2024-12",
+          "avg_price": 40.16,
+          "min_price": 34.81,
+          "max_price": 40.95,
+          "units_sold": 2206,
+          "revenue": 87793.74
+        },
+        {
+          "month": "2025-01",
+          "avg_price": 40.79,
+          "min_price": 34.84,
+          "max_price": 40.99,
+          "units_sold": 1623,
+          "revenue": 66034.77
+        },
+        {
+          "month": "2025-02",
+          "avg_price": 40.33,
+          "min_price": 34.84,
+          "max_price": 40.99,
+          "units_sold": 1649,
+          "revenue": 65888.96
+        },
+        {
+          "month": "2025-03",
+          "avg_price": 40.59,
+          "min_price": 34.84,
+          "max_price": 40.99,
+          "units_sold": 1988,
+          "revenue": 80331.92
+        },
+        {
+          "month": "2025-04",
+          "avg_price": 41.11,
+          "min_price": 35.12,
+          "max_price": 41.32,
+          "units_sold": 1994,
+          "revenue": 81908.48
+        },
+        {
+          "month": "2025-05",
+          "avg_price": 40.72,
+          "min_price": 35.12,
+          "max_price": 41.32,
+          "units_sold": 2377,
+          "revenue": 96289.44
+        },
+        {
+          "month": "2025-06",
+          "avg_price": 41.11,
+          "min_price": 35.12,
+          "max_price": 41.32,
+          "units_sold": 2434,
+          "revenue": 99667.68
+        },
+        {
+          "month": "2025-07",
+          "avg_price": 40.84,
+          "min_price": 35.4,
+          "max_price": 41.65,
+          "units_sold": 2578,
+          "revenue": 104629.95
+        },
+        {
+          "month": "2025-08",
+          "avg_price": 40.64,
+          "min_price": 35.4,
+          "max_price": 41.65,
+          "units_sold": 2400,
+          "revenue": 96678.75
+        },
+        {
+          "month": "2025-09",
+          "avg_price": 40.4,
+          "min_price": 35.4,
+          "max_price": 41.65,
+          "units_sold": 2109,
+          "revenue": 84283.6
+        },
+        {
+          "month": "2025-10",
+          "avg_price": 40.96,
+          "min_price": 35.68,
+          "max_price": 41.97,
+          "units_sold": 1921,
+          "revenue": 77724.68
+        },
+        {
+          "month": "2025-11",
+          "avg_price": 40.29,
+          "min_price": 35.68,
+          "max_price": 41.97,
+          "units_sold": 2368,
+          "revenue": 94736.65
+        },
+        {
+          "month": "2025-12",
+          "avg_price": 40.92,
+          "min_price": 35.68,
+          "max_price": 41.97,
+          "units_sold": 2082,
+          "revenue": 84689.42
+        }
+      ]
+    },
     {
       "product_id": "PRD-107",
       "product_name": "MagSafe Fast Wireless Charger Pad",
       "category": "Accessories",
-      "units_sold": 46265,
-      "total_revenue": 1351968.85,
-      "avg_price": 29.41
+      "units_sold": 46082,
+      "total_revenue": 1381649.95,
+      "avg_price": 30.17,
+      "min_price": 25.49,
+      "max_price": 31.48,
+      "latest_price": 31.48,
+      "current_stock": 720,
+      "reorder_point": 250,
+      "lead_time_days": 2,
+      "stock_status": "Healthy Stock",
+      "stock_badge": "healthy",
+      "recent_daily_rate": 67.5,
+      "days_of_stock": 11,
+      "price_history": [
+        {
+          "month": "2024-01",
+          "avg_price": 29.7,
+          "min_price": 25.49,
+          "max_price": 29.99,
+          "units_sold": 1478,
+          "revenue": 43776.22
+        },
+        {
+          "month": "2024-02",
+          "avg_price": 29.83,
+          "min_price": 25.49,
+          "max_price": 29.99,
+          "units_sold": 1427,
+          "revenue": 42503.23
+        },
+        {
+          "month": "2024-03",
+          "avg_price": 29.55,
+          "min_price": 25.49,
+          "max_price": 29.99,
+          "units_sold": 1867,
+          "revenue": 54825.83
+        },
+        {
+          "month": "2024-04",
+          "avg_price": 29.78,
+          "min_price": 25.7,
+          "max_price": 30.23,
+          "units_sold": 1880,
+          "revenue": 55795.03
+        },
+        {
+          "month": "2024-05",
+          "avg_price": 29.5,
+          "min_price": 25.7,
+          "max_price": 30.23,
+          "units_sold": 2179,
+          "revenue": 63787.37
+        },
+        {
+          "month": "2024-06",
+          "avg_price": 29.63,
+          "min_price": 25.7,
+          "max_price": 30.23,
+          "units_sold": 2256,
+          "revenue": 66608.85
+        },
+        {
+          "month": "2024-07",
+          "avg_price": 30.18,
+          "min_price": 25.9,
+          "max_price": 30.47,
+          "units_sold": 2138,
+          "revenue": 64249.14
+        },
+        {
+          "month": "2024-08",
+          "avg_price": 29.44,
+          "min_price": 25.9,
+          "max_price": 30.47,
+          "units_sold": 2189,
+          "revenue": 63563.81
+        },
+        {
+          "month": "2024-09",
+          "avg_price": 30.01,
+          "min_price": 25.9,
+          "max_price": 30.47,
+          "units_sold": 1866,
+          "revenue": 55847.05
+        },
+        {
+          "month": "2024-10",
+          "avg_price": 30.56,
+          "min_price": 26.1,
+          "max_price": 30.71,
+          "units_sold": 1600,
+          "revenue": 48868.62
+        },
+        {
+          "month": "2024-11",
+          "avg_price": 29.33,
+          "min_price": 26.1,
+          "max_price": 30.71,
+          "units_sold": 2174,
+          "revenue": 62955.68
+        },
+        {
+          "month": "2024-12",
+          "avg_price": 30.12,
+          "min_price": 26.1,
+          "max_price": 30.71,
+          "units_sold": 1992,
+          "revenue": 59629.97
+        },
+        {
+          "month": "2025-01",
+          "avg_price": 30.59,
+          "min_price": 26.13,
+          "max_price": 30.74,
+          "units_sold": 1470,
+          "revenue": 44805.17
+        },
+        {
+          "month": "2025-02",
+          "avg_price": 30.25,
+          "min_price": 26.13,
+          "max_price": 30.74,
+          "units_sold": 1518,
+          "revenue": 45612.24
+        },
+        {
+          "month": "2025-03",
+          "avg_price": 30.44,
+          "min_price": 26.13,
+          "max_price": 30.74,
+          "units_sold": 1767,
+          "revenue": 53515.44
+        },
+        {
+          "month": "2025-04",
+          "avg_price": 30.83,
+          "min_price": 26.34,
+          "max_price": 30.99,
+          "units_sold": 1882,
+          "revenue": 58011.63
+        },
+        {
+          "month": "2025-05",
+          "avg_price": 30.54,
+          "min_price": 26.34,
+          "max_price": 30.99,
+          "units_sold": 2197,
+          "revenue": 66806.28
+        },
+        {
+          "month": "2025-06",
+          "avg_price": 30.83,
+          "min_price": 26.34,
+          "max_price": 30.99,
+          "units_sold": 2193,
+          "revenue": 67361.22
+        },
+        {
+          "month": "2025-07",
+          "avg_price": 30.63,
+          "min_price": 26.55,
+          "max_price": 31.23,
+          "units_sold": 2169,
+          "revenue": 65926.71
+        },
+        {
+          "month": "2025-08",
+          "avg_price": 30.48,
+          "min_price": 26.55,
+          "max_price": 31.23,
+          "units_sold": 2188,
+          "revenue": 66112.92
+        },
+        {
+          "month": "2025-09",
+          "avg_price": 30.29,
+          "min_price": 26.55,
+          "max_price": 31.23,
+          "units_sold": 1882,
+          "revenue": 56589.3
+        },
+        {
+          "month": "2025-10",
+          "avg_price": 30.72,
+          "min_price": 26.76,
+          "max_price": 31.48,
+          "units_sold": 1746,
+          "revenue": 53123.28
+        },
+        {
+          "month": "2025-11",
+          "avg_price": 30.22,
+          "min_price": 26.76,
+          "max_price": 31.48,
+          "units_sold": 2065,
+          "revenue": 61824.92
+        },
+        {
+          "month": "2025-12",
+          "avg_price": 30.69,
+          "min_price": 26.76,
+          "max_price": 31.48,
+          "units_sold": 1959,
+          "revenue": 59550.04
+        }
+      ]
+    },
+    {
+      "product_id": "PRD-111",
+      "product_name": "Active Noise-Cancelling True Wireless Earbuds",
+      "category": "Audio",
+      "units_sold": 41962,
+      "total_revenue": 4192205.38,
+      "avg_price": 100.6,
+      "min_price": 84.99,
+      "max_price": 104.95,
+      "latest_price": 104.95,
+      "current_stock": 480,
+      "reorder_point": 180,
+      "lead_time_days": 3,
+      "stock_status": "Healthy Stock",
+      "stock_badge": "healthy",
+      "recent_daily_rate": 62.5,
+      "days_of_stock": 8,
+      "price_history": [
+        {
+          "month": "2024-01",
+          "avg_price": 99.02,
+          "min_price": 84.99,
+          "max_price": 99.99,
+          "units_sold": 1312,
+          "revenue": 129461.88
+        },
+        {
+          "month": "2024-02",
+          "avg_price": 99.47,
+          "min_price": 84.99,
+          "max_price": 99.99,
+          "units_sold": 1328,
+          "revenue": 131781.72
+        },
+        {
+          "month": "2024-03",
+          "avg_price": 98.54,
+          "min_price": 84.99,
+          "max_price": 99.99,
+          "units_sold": 1717,
+          "revenue": 168022.83
+        },
+        {
+          "month": "2024-04",
+          "avg_price": 99.28,
+          "min_price": 85.67,
+          "max_price": 100.79,
+          "units_sold": 1736,
+          "revenue": 171886.96
+        },
+        {
+          "month": "2024-05",
+          "avg_price": 98.35,
+          "min_price": 85.67,
+          "max_price": 100.79,
+          "units_sold": 2090,
+          "revenue": 203620.3
+        },
+        {
+          "month": "2024-06",
+          "avg_price": 98.77,
+          "min_price": 85.67,
+          "max_price": 100.79,
+          "units_sold": 2078,
+          "revenue": 203302.9
+        },
+        {
+          "month": "2024-07",
+          "avg_price": 100.61,
+          "min_price": 86.35,
+          "max_price": 101.59,
+          "units_sold": 1958,
+          "revenue": 196505.3
+        },
+        {
+          "month": "2024-08",
+          "avg_price": 98.15,
+          "min_price": 86.35,
+          "max_price": 101.59,
+          "units_sold": 1969,
+          "revenue": 190978.15
+        },
+        {
+          "month": "2024-09",
+          "avg_price": 100.07,
+          "min_price": 86.35,
+          "max_price": 101.59,
+          "units_sold": 1689,
+          "revenue": 167927.91
+        },
+        {
+          "month": "2024-10",
+          "avg_price": 101.89,
+          "min_price": 87.03,
+          "max_price": 102.39,
+          "units_sold": 1491,
+          "revenue": 151880.13
+        },
+        {
+          "month": "2024-11",
+          "avg_price": 97.78,
+          "min_price": 87.03,
+          "max_price": 102.39,
+          "units_sold": 1926,
+          "revenue": 186251.46
+        },
+        {
+          "month": "2024-12",
+          "avg_price": 100.41,
+          "min_price": 87.03,
+          "max_price": 102.39,
+          "units_sold": 1861,
+          "revenue": 185233.23
+        },
+        {
+          "month": "2025-01",
+          "avg_price": 101.99,
+          "min_price": 87.12,
+          "max_price": 102.49,
+          "units_sold": 1301,
+          "revenue": 132202.11
+        },
+        {
+          "month": "2025-02",
+          "avg_price": 100.84,
+          "min_price": 87.12,
+          "max_price": 102.49,
+          "units_sold": 1281,
+          "revenue": 128184.95
+        },
+        {
+          "month": "2025-03",
+          "avg_price": 101.5,
+          "min_price": 87.12,
+          "max_price": 102.49,
+          "units_sold": 1627,
+          "revenue": 164568.69
+        },
+        {
+          "month": "2025-04",
+          "avg_price": 102.79,
+          "min_price": 87.81,
+          "max_price": 103.31,
+          "units_sold": 1704,
+          "revenue": 174722.74
+        },
+        {
+          "month": "2025-05",
+          "avg_price": 101.81,
+          "min_price": 87.81,
+          "max_price": 103.31,
+          "units_sold": 2058,
+          "revenue": 208690.48
+        },
+        {
+          "month": "2025-06",
+          "avg_price": 102.79,
+          "min_price": 87.81,
+          "max_price": 103.31,
+          "units_sold": 1954,
+          "revenue": 200271.24
+        },
+        {
+          "month": "2025-07",
+          "avg_price": 102.11,
+          "min_price": 88.51,
+          "max_price": 104.13,
+          "units_sold": 1978,
+          "revenue": 200096.02
+        },
+        {
+          "month": "2025-08",
+          "avg_price": 101.61,
+          "min_price": 88.51,
+          "max_price": 104.13,
+          "units_sold": 1902,
+          "revenue": 192494.54
+        },
+        {
+          "month": "2025-09",
+          "avg_price": 101.01,
+          "min_price": 88.51,
+          "max_price": 104.13,
+          "units_sold": 1674,
+          "revenue": 167456.44
+        },
+        {
+          "month": "2025-10",
+          "avg_price": 102.41,
+          "min_price": 89.21,
+          "max_price": 104.95,
+          "units_sold": 1558,
+          "revenue": 157924.4
+        },
+        {
+          "month": "2025-11",
+          "avg_price": 100.75,
+          "min_price": 89.21,
+          "max_price": 104.95,
+          "units_sold": 1956,
+          "revenue": 195287.3
+        },
+        {
+          "month": "2025-12",
+          "avg_price": 102.33,
+          "min_price": 89.21,
+          "max_price": 104.95,
+          "units_sold": 1814,
+          "revenue": 183453.7
+        }
+      ]
     },
     {
       "product_id": "PRD-104",
       "product_name": "USB-C Dual HDMI Multiport Dock",
       "category": "Accessories",
-      "units_sold": 39002,
-      "total_revenue": 1898589.98,
-      "avg_price": 49.02
+      "units_sold": 38802,
+      "total_revenue": 1936982.16,
+      "avg_price": 50.29,
+      "min_price": 42.49,
+      "max_price": 52.47,
+      "latest_price": 52.47,
+      "current_stock": 580,
+      "reorder_point": 200,
+      "lead_time_days": 2,
+      "stock_status": "Healthy Stock",
+      "stock_badge": "healthy",
+      "recent_daily_rate": 55.8,
+      "days_of_stock": 10,
+      "price_history": [
+        {
+          "month": "2024-01",
+          "avg_price": 49.51,
+          "min_price": 42.49,
+          "max_price": 49.99,
+          "units_sold": 1210,
+          "revenue": 59692.9
+        },
+        {
+          "month": "2024-02",
+          "avg_price": 49.73,
+          "min_price": 42.49,
+          "max_price": 49.99,
+          "units_sold": 1182,
+          "revenue": 58600.68
+        },
+        {
+          "month": "2024-03",
+          "avg_price": 49.26,
+          "min_price": 42.49,
+          "max_price": 49.99,
+          "units_sold": 1574,
+          "revenue": 76989.26
+        },
+        {
+          "month": "2024-04",
+          "avg_price": 49.63,
+          "min_price": 42.83,
+          "max_price": 50.39,
+          "units_sold": 1630,
+          "revenue": 80699.3
+        },
+        {
+          "month": "2024-05",
+          "avg_price": 49.17,
+          "min_price": 42.83,
+          "max_price": 50.39,
+          "units_sold": 1917,
+          "revenue": 93097.35
+        },
+        {
+          "month": "2024-06",
+          "avg_price": 49.38,
+          "min_price": 42.83,
+          "max_price": 50.39,
+          "units_sold": 1848,
+          "revenue": 90384.0
+        },
+        {
+          "month": "2024-07",
+          "avg_price": 50.3,
+          "min_price": 43.17,
+          "max_price": 50.79,
+          "units_sold": 1836,
+          "revenue": 91817.88
+        },
+        {
+          "month": "2024-08",
+          "avg_price": 49.07,
+          "min_price": 43.17,
+          "max_price": 50.79,
+          "units_sold": 1816,
+          "revenue": 88287.48
+        },
+        {
+          "month": "2024-09",
+          "avg_price": 50.03,
+          "min_price": 43.17,
+          "max_price": 50.79,
+          "units_sold": 1573,
+          "revenue": 78292.47
+        },
+        {
+          "month": "2024-10",
+          "avg_price": 50.94,
+          "min_price": 43.51,
+          "max_price": 51.19,
+          "units_sold": 1356,
+          "revenue": 68937.48
+        },
+        {
+          "month": "2024-11",
+          "avg_price": 48.89,
+          "min_price": 43.51,
+          "max_price": 51.19,
+          "units_sold": 1852,
+          "revenue": 89235.88
+        },
+        {
+          "month": "2024-12",
+          "avg_price": 50.2,
+          "min_price": 43.51,
+          "max_price": 51.19,
+          "units_sold": 1662,
+          "revenue": 82858.26
+        },
+        {
+          "month": "2025-01",
+          "avg_price": 50.99,
+          "min_price": 43.55,
+          "max_price": 51.24,
+          "units_sold": 1235,
+          "revenue": 62720.03
+        },
+        {
+          "month": "2025-02",
+          "avg_price": 50.42,
+          "min_price": 43.55,
+          "max_price": 51.24,
+          "units_sold": 1228,
+          "revenue": 61407.79
+        },
+        {
+          "month": "2025-03",
+          "avg_price": 50.74,
+          "min_price": 43.55,
+          "max_price": 51.24,
+          "units_sold": 1475,
+          "revenue": 74433.19
+        },
+        {
+          "month": "2025-04",
+          "avg_price": 51.39,
+          "min_price": 43.9,
+          "max_price": 51.65,
+          "units_sold": 1592,
+          "revenue": 81599.05
+        },
+        {
+          "month": "2025-05",
+          "avg_price": 50.9,
+          "min_price": 43.9,
+          "max_price": 51.65,
+          "units_sold": 1856,
+          "revenue": 93940.4
+        },
+        {
+          "month": "2025-06",
+          "avg_price": 51.39,
+          "min_price": 43.9,
+          "max_price": 51.65,
+          "units_sold": 1807,
+          "revenue": 92502.3
+        },
+        {
+          "month": "2025-07",
+          "avg_price": 51.05,
+          "min_price": 44.25,
+          "max_price": 52.06,
+          "units_sold": 1923,
+          "revenue": 97315.4
+        },
+        {
+          "month": "2025-08",
+          "avg_price": 50.8,
+          "min_price": 44.25,
+          "max_price": 52.06,
+          "units_sold": 1756,
+          "revenue": 88644.81
+        },
+        {
+          "month": "2025-09",
+          "avg_price": 50.5,
+          "min_price": 44.25,
+          "max_price": 52.06,
+          "units_sold": 1574,
+          "revenue": 78677.86
+        },
+        {
+          "month": "2025-10",
+          "avg_price": 51.2,
+          "min_price": 44.6,
+          "max_price": 52.47,
+          "units_sold": 1477,
+          "revenue": 74838.13
+        },
+        {
+          "month": "2025-11",
+          "avg_price": 50.37,
+          "min_price": 44.6,
+          "max_price": 52.47,
+          "units_sold": 1805,
+          "revenue": 90190.97
+        },
+        {
+          "month": "2025-12",
+          "avg_price": 51.16,
+          "min_price": 44.6,
+          "max_price": 52.47,
+          "units_sold": 1618,
+          "revenue": 81819.29
+        }
+      ]
+    },
+    {
+      "product_id": "PRD-109",
+      "product_name": "Smart Home AI Security Camera 2K",
+      "category": "Smart Home",
+      "units_sold": 35119,
+      "total_revenue": 2454340.64,
+      "avg_price": 70.41,
+      "min_price": 59.49,
+      "max_price": 73.46,
+      "latest_price": 73.46,
+      "current_stock": 390,
+      "reorder_point": 160,
+      "lead_time_days": 4,
+      "stock_status": "Healthy Stock",
+      "stock_badge": "healthy",
+      "recent_daily_rate": 52.0,
+      "days_of_stock": 8,
+      "price_history": [
+        {
+          "month": "2024-01",
+          "avg_price": 69.31,
+          "min_price": 59.49,
+          "max_price": 69.99,
+          "units_sold": 1077,
+          "revenue": 74486.73
+        },
+        {
+          "month": "2024-02",
+          "avg_price": 69.63,
+          "min_price": 59.49,
+          "max_price": 69.99,
+          "units_sold": 1054,
+          "revenue": 73023.96
+        },
+        {
+          "month": "2024-03",
+          "avg_price": 68.97,
+          "min_price": 59.49,
+          "max_price": 69.99,
+          "units_sold": 1445,
+          "revenue": 98899.05
+        },
+        {
+          "month": "2024-04",
+          "avg_price": 69.49,
+          "min_price": 59.97,
+          "max_price": 70.55,
+          "units_sold": 1521,
+          "revenue": 104947.21
+        },
+        {
+          "month": "2024-05",
+          "avg_price": 68.84,
+          "min_price": 59.97,
+          "max_price": 70.55,
+          "units_sold": 1704,
+          "revenue": 115942.88
+        },
+        {
+          "month": "2024-06",
+          "avg_price": 69.14,
+          "min_price": 59.97,
+          "max_price": 70.55,
+          "units_sold": 1724,
+          "revenue": 118221.44
+        },
+        {
+          "month": "2024-07",
+          "avg_price": 70.42,
+          "min_price": 60.44,
+          "max_price": 71.11,
+          "units_sold": 1641,
+          "revenue": 115101.68
+        },
+        {
+          "month": "2024-08",
+          "avg_price": 68.7,
+          "min_price": 60.44,
+          "max_price": 71.11,
+          "units_sold": 1700,
+          "revenue": 115071.85
+        },
+        {
+          "month": "2024-09",
+          "avg_price": 70.04,
+          "min_price": 60.44,
+          "max_price": 71.11,
+          "units_sold": 1395,
+          "revenue": 97085.79
+        },
+        {
+          "month": "2024-10",
+          "avg_price": 71.32,
+          "min_price": 60.92,
+          "max_price": 71.67,
+          "units_sold": 1195,
+          "revenue": 85215.65
+        },
+        {
+          "month": "2024-11",
+          "avg_price": 68.44,
+          "min_price": 60.92,
+          "max_price": 71.67,
+          "units_sold": 1609,
+          "revenue": 108877.78
+        },
+        {
+          "month": "2024-12",
+          "avg_price": 70.28,
+          "min_price": 60.92,
+          "max_price": 71.67,
+          "units_sold": 1470,
+          "revenue": 102484.65
+        },
+        {
+          "month": "2025-01",
+          "avg_price": 71.39,
+          "min_price": 60.98,
+          "max_price": 71.74,
+          "units_sold": 1134,
+          "revenue": 80664.52
+        },
+        {
+          "month": "2025-02",
+          "avg_price": 70.59,
+          "min_price": 60.98,
+          "max_price": 71.74,
+          "units_sold": 1130,
+          "revenue": 79086.36
+        },
+        {
+          "month": "2025-03",
+          "avg_price": 71.05,
+          "min_price": 60.98,
+          "max_price": 71.74,
+          "units_sold": 1365,
+          "revenue": 96515.54
+        },
+        {
+          "month": "2025-04",
+          "avg_price": 71.95,
+          "min_price": 61.47,
+          "max_price": 72.31,
+          "units_sold": 1439,
+          "revenue": 103295.29
+        },
+        {
+          "month": "2025-05",
+          "avg_price": 71.26,
+          "min_price": 61.47,
+          "max_price": 72.31,
+          "units_sold": 1697,
+          "revenue": 120411.99
+        },
+        {
+          "month": "2025-06",
+          "avg_price": 71.95,
+          "min_price": 61.47,
+          "max_price": 72.31,
+          "units_sold": 1606,
+          "revenue": 115154.26
+        },
+        {
+          "month": "2025-07",
+          "avg_price": 71.48,
+          "min_price": 61.95,
+          "max_price": 72.89,
+          "units_sold": 1665,
+          "revenue": 118101.73
+        },
+        {
+          "month": "2025-08",
+          "avg_price": 71.13,
+          "min_price": 61.95,
+          "max_price": 72.89,
+          "units_sold": 1620,
+          "revenue": 114460.66
+        },
+        {
+          "month": "2025-09",
+          "avg_price": 70.7,
+          "min_price": 61.95,
+          "max_price": 72.89,
+          "units_sold": 1478,
+          "revenue": 103530.46
+        },
+        {
+          "month": "2025-10",
+          "avg_price": 71.68,
+          "min_price": 62.44,
+          "max_price": 73.46,
+          "units_sold": 1321,
+          "revenue": 93734.66
+        },
+        {
+          "month": "2025-11",
+          "avg_price": 70.52,
+          "min_price": 62.44,
+          "max_price": 73.46,
+          "units_sold": 1638,
+          "revenue": 114564.02
+        },
+        {
+          "month": "2025-12",
+          "avg_price": 71.62,
+          "min_price": 62.44,
+          "max_price": 73.46,
+          "units_sold": 1491,
+          "revenue": 105462.48
+        }
+      ]
     },
     {
       "product_id": "PRD-101",
       "product_name": "Wireless Noise-Canceling Headphones",
       "category": "Audio",
-      "units_sold": 32574,
-      "total_revenue": 4757726.76,
-      "avg_price": 147.09
+      "units_sold": 32505,
+      "total_revenue": 4869710.47,
+      "avg_price": 150.9,
+      "min_price": 127.49,
+      "max_price": 157.43,
+      "latest_price": 157.43,
+      "current_stock": 420,
+      "reorder_point": 150,
+      "lead_time_days": 4,
+      "stock_status": "Healthy Stock",
+      "stock_badge": "healthy",
+      "recent_daily_rate": 46.8,
+      "days_of_stock": 9,
+      "price_history": [
+        {
+          "month": "2024-01",
+          "avg_price": 148.54,
+          "min_price": 127.49,
+          "max_price": 149.99,
+          "units_sold": 1041,
+          "revenue": 154362.09
+        },
+        {
+          "month": "2024-02",
+          "avg_price": 149.21,
+          "min_price": 127.49,
+          "max_price": 149.99,
+          "units_sold": 1013,
+          "revenue": 150589.87
+        },
+        {
+          "month": "2024-03",
+          "avg_price": 147.81,
+          "min_price": 127.49,
+          "max_price": 149.99,
+          "units_sold": 1306,
+          "revenue": 191634.44
+        },
+        {
+          "month": "2024-04",
+          "avg_price": 148.92,
+          "min_price": 128.51,
+          "max_price": 151.19,
+          "units_sold": 1390,
+          "revenue": 206774.78
+        },
+        {
+          "month": "2024-05",
+          "avg_price": 147.53,
+          "min_price": 128.51,
+          "max_price": 151.19,
+          "units_sold": 1602,
+          "revenue": 234313.74
+        },
+        {
+          "month": "2024-06",
+          "avg_price": 148.17,
+          "min_price": 128.51,
+          "max_price": 151.19,
+          "units_sold": 1658,
+          "revenue": 243483.46
+        },
+        {
+          "month": "2024-07",
+          "avg_price": 150.92,
+          "min_price": 129.53,
+          "max_price": 152.39,
+          "units_sold": 1469,
+          "revenue": 220431.91
+        },
+        {
+          "month": "2024-08",
+          "avg_price": 147.23,
+          "min_price": 129.53,
+          "max_price": 152.39,
+          "units_sold": 1542,
+          "revenue": 223372.5
+        },
+        {
+          "month": "2024-09",
+          "avg_price": 150.1,
+          "min_price": 129.53,
+          "max_price": 152.39,
+          "units_sold": 1260,
+          "revenue": 188193.78
+        },
+        {
+          "month": "2024-10",
+          "avg_price": 152.85,
+          "min_price": 130.55,
+          "max_price": 153.59,
+          "units_sold": 1109,
+          "revenue": 169248.43
+        },
+        {
+          "month": "2024-11",
+          "avg_price": 146.68,
+          "min_price": 130.55,
+          "max_price": 153.59,
+          "units_sold": 1541,
+          "revenue": 223065.55
+        },
+        {
+          "month": "2024-12",
+          "avg_price": 150.62,
+          "min_price": 130.55,
+          "max_price": 153.59,
+          "units_sold": 1395,
+          "revenue": 208544.13
+        },
+        {
+          "month": "2025-01",
+          "avg_price": 153.0,
+          "min_price": 130.68,
+          "max_price": 153.74,
+          "units_sold": 1029,
+          "revenue": 156561.2
+        },
+        {
+          "month": "2025-02",
+          "avg_price": 151.27,
+          "min_price": 130.68,
+          "max_price": 153.74,
+          "units_sold": 1026,
+          "revenue": 154070.7
+        },
+        {
+          "month": "2025-03",
+          "avg_price": 152.25,
+          "min_price": 130.68,
+          "max_price": 153.74,
+          "units_sold": 1302,
+          "revenue": 197563.7
+        },
+        {
+          "month": "2025-04",
+          "avg_price": 154.2,
+          "min_price": 131.72,
+          "max_price": 154.97,
+          "units_sold": 1340,
+          "revenue": 206404.3
+        },
+        {
+          "month": "2025-05",
+          "avg_price": 152.72,
+          "min_price": 131.72,
+          "max_price": 154.97,
+          "units_sold": 1505,
+          "revenue": 228835.6
+        },
+        {
+          "month": "2025-06",
+          "avg_price": 154.2,
+          "min_price": 131.72,
+          "max_price": 154.97,
+          "units_sold": 1466,
+          "revenue": 225302.77
+        },
+        {
+          "month": "2025-07",
+          "avg_price": 153.18,
+          "min_price": 132.77,
+          "max_price": 156.2,
+          "units_sold": 1578,
+          "revenue": 239876.34
+        },
+        {
+          "month": "2025-08",
+          "avg_price": 152.42,
+          "min_price": 132.77,
+          "max_price": 156.2,
+          "units_sold": 1574,
+          "revenue": 238103.47
+        },
+        {
+          "month": "2025-09",
+          "avg_price": 151.51,
+          "min_price": 132.77,
+          "max_price": 156.2,
+          "units_sold": 1323,
+          "revenue": 198522.39
+        },
+        {
+          "month": "2025-10",
+          "avg_price": 153.62,
+          "min_price": 133.82,
+          "max_price": 157.43,
+          "units_sold": 1203,
+          "revenue": 182801.1
+        },
+        {
+          "month": "2025-11",
+          "avg_price": 151.13,
+          "min_price": 133.82,
+          "max_price": 157.43,
+          "units_sold": 1486,
+          "revenue": 222773.45
+        },
+        {
+          "month": "2025-12",
+          "avg_price": 153.5,
+          "min_price": 133.82,
+          "max_price": 157.43,
+          "units_sold": 1347,
+          "revenue": 204880.77
+        }
+      ]
+    },
+    {
+      "product_id": "PRD-113",
+      "product_name": "High-Precision Wireless Ergonomic Mouse",
+      "category": "Peripherals",
+      "units_sold": 31704,
+      "total_revenue": 1898585.87,
+      "avg_price": 60.35,
+      "min_price": 50.99,
+      "max_price": 62.97,
+      "latest_price": 62.97,
+      "current_stock": 350,
+      "reorder_point": 140,
+      "lead_time_days": 3,
+      "stock_status": "Healthy Stock",
+      "stock_badge": "healthy",
+      "recent_daily_rate": 47.6,
+      "days_of_stock": 7,
+      "price_history": [
+        {
+          "month": "2024-01",
+          "avg_price": 59.41,
+          "min_price": 50.99,
+          "max_price": 59.99,
+          "units_sold": 1018,
+          "revenue": 60367.82
+        },
+        {
+          "month": "2024-02",
+          "avg_price": 59.68,
+          "min_price": 50.99,
+          "max_price": 59.99,
+          "units_sold": 1045,
+          "revenue": 62185.55
+        },
+        {
+          "month": "2024-03",
+          "avg_price": 59.12,
+          "min_price": 50.99,
+          "max_price": 59.99,
+          "units_sold": 1243,
+          "revenue": 73010.57
+        },
+        {
+          "month": "2024-04",
+          "avg_price": 59.56,
+          "min_price": 51.4,
+          "max_price": 60.47,
+          "units_sold": 1367,
+          "revenue": 80957.33
+        },
+        {
+          "month": "2024-05",
+          "avg_price": 59.01,
+          "min_price": 51.4,
+          "max_price": 60.47,
+          "units_sold": 1607,
+          "revenue": 93710.55
+        },
+        {
+          "month": "2024-06",
+          "avg_price": 59.26,
+          "min_price": 51.4,
+          "max_price": 60.47,
+          "units_sold": 1572,
+          "revenue": 92446.68
+        },
+        {
+          "month": "2024-07",
+          "avg_price": 60.36,
+          "min_price": 51.81,
+          "max_price": 60.95,
+          "units_sold": 1424,
+          "revenue": 85440.08
+        },
+        {
+          "month": "2024-08",
+          "avg_price": 58.89,
+          "min_price": 51.81,
+          "max_price": 60.95,
+          "units_sold": 1536,
+          "revenue": 89213.72
+        },
+        {
+          "month": "2024-09",
+          "avg_price": 60.04,
+          "min_price": 51.81,
+          "max_price": 60.95,
+          "units_sold": 1219,
+          "revenue": 72661.99
+        },
+        {
+          "month": "2024-10",
+          "avg_price": 61.13,
+          "min_price": 52.22,
+          "max_price": 61.43,
+          "units_sold": 1065,
+          "revenue": 65017.71
+        },
+        {
+          "month": "2024-11",
+          "avg_price": 58.67,
+          "min_price": 52.22,
+          "max_price": 61.43,
+          "units_sold": 1507,
+          "revenue": 87113.48
+        },
+        {
+          "month": "2024-12",
+          "avg_price": 60.24,
+          "min_price": 52.22,
+          "max_price": 61.43,
+          "units_sold": 1372,
+          "revenue": 81887.36
+        },
+        {
+          "month": "2025-01",
+          "avg_price": 61.19,
+          "min_price": 52.27,
+          "max_price": 61.49,
+          "units_sold": 965,
+          "revenue": 58830.75
+        },
+        {
+          "month": "2025-02",
+          "avg_price": 60.5,
+          "min_price": 52.27,
+          "max_price": 61.49,
+          "units_sold": 1006,
+          "revenue": 60503.6
+        },
+        {
+          "month": "2025-03",
+          "avg_price": 60.9,
+          "min_price": 52.27,
+          "max_price": 61.49,
+          "units_sold": 1253,
+          "revenue": 75866.81
+        },
+        {
+          "month": "2025-04",
+          "avg_price": 61.67,
+          "min_price": 52.68,
+          "max_price": 61.98,
+          "units_sold": 1310,
+          "revenue": 80673.0
+        },
+        {
+          "month": "2025-05",
+          "avg_price": 61.08,
+          "min_price": 52.68,
+          "max_price": 61.98,
+          "units_sold": 1517,
+          "revenue": 92117.16
+        },
+        {
+          "month": "2025-06",
+          "avg_price": 61.67,
+          "min_price": 52.68,
+          "max_price": 61.98,
+          "units_sold": 1438,
+          "revenue": 88457.64
+        },
+        {
+          "month": "2025-07",
+          "avg_price": 61.26,
+          "min_price": 53.1,
+          "max_price": 62.47,
+          "units_sold": 1508,
+          "revenue": 91646.75
+        },
+        {
+          "month": "2025-08",
+          "avg_price": 60.96,
+          "min_price": 53.1,
+          "max_price": 62.47,
+          "units_sold": 1515,
+          "revenue": 91784.2
+        },
+        {
+          "month": "2025-09",
+          "avg_price": 60.6,
+          "min_price": 53.1,
+          "max_price": 62.47,
+          "units_sold": 1249,
+          "revenue": 75251.51
+        },
+        {
+          "month": "2025-10",
+          "avg_price": 61.45,
+          "min_price": 53.52,
+          "max_price": 62.97,
+          "units_sold": 1156,
+          "revenue": 70090.62
+        },
+        {
+          "month": "2025-11",
+          "avg_price": 60.45,
+          "min_price": 53.52,
+          "max_price": 62.97,
+          "units_sold": 1433,
+          "revenue": 85964.61
+        },
+        {
+          "month": "2025-12",
+          "avg_price": 61.39,
+          "min_price": 53.52,
+          "max_price": 62.97,
+          "units_sold": 1379,
+          "revenue": 83386.38
+        }
+      ]
+    },
+    {
+      "product_id": "PRD-114",
+      "product_name": "Smart Ambient RGB Desk Light Bar Kit",
+      "category": "Smart Home",
+      "units_sold": 29731,
+      "total_revenue": 1335617.69,
+      "avg_price": 45.26,
+      "min_price": 38.24,
+      "max_price": 47.22,
+      "latest_price": 47.22,
+      "current_stock": 115,
+      "reorder_point": 110,
+      "lead_time_days": 4,
+      "stock_status": "Healthy Stock",
+      "stock_badge": "healthy",
+      "recent_daily_rate": 42.8,
+      "days_of_stock": 3,
+      "price_history": [
+        {
+          "month": "2024-01",
+          "avg_price": 44.55,
+          "min_price": 38.24,
+          "max_price": 44.99,
+          "units_sold": 942,
+          "revenue": 41752.83
+        },
+        {
+          "month": "2024-02",
+          "avg_price": 44.76,
+          "min_price": 38.24,
+          "max_price": 44.99,
+          "units_sold": 935,
+          "revenue": 41809.15
+        },
+        {
+          "month": "2024-03",
+          "avg_price": 44.34,
+          "min_price": 38.24,
+          "max_price": 44.99,
+          "units_sold": 1188,
+          "revenue": 52273.62
+        },
+        {
+          "month": "2024-04",
+          "avg_price": 44.67,
+          "min_price": 38.55,
+          "max_price": 45.35,
+          "units_sold": 1255,
+          "revenue": 55880.65
+        },
+        {
+          "month": "2024-05",
+          "avg_price": 44.25,
+          "min_price": 38.55,
+          "max_price": 45.35,
+          "units_sold": 1443,
+          "revenue": 63107.65
+        },
+        {
+          "month": "2024-06",
+          "avg_price": 44.44,
+          "min_price": 38.55,
+          "max_price": 45.35,
+          "units_sold": 1461,
+          "revenue": 64549.55
+        },
+        {
+          "month": "2024-07",
+          "avg_price": 45.27,
+          "min_price": 38.85,
+          "max_price": 45.71,
+          "units_sold": 1397,
+          "revenue": 62889.61
+        },
+        {
+          "month": "2024-08",
+          "avg_price": 44.16,
+          "min_price": 38.85,
+          "max_price": 45.71,
+          "units_sold": 1462,
+          "revenue": 63747.88
+        },
+        {
+          "month": "2024-09",
+          "avg_price": 45.02,
+          "min_price": 38.85,
+          "max_price": 45.71,
+          "units_sold": 1177,
+          "revenue": 52675.63
+        },
+        {
+          "month": "2024-10",
+          "avg_price": 45.85,
+          "min_price": 39.16,
+          "max_price": 46.07,
+          "units_sold": 1024,
+          "revenue": 46926.92
+        },
+        {
+          "month": "2024-11",
+          "avg_price": 44.0,
+          "min_price": 39.16,
+          "max_price": 46.07,
+          "units_sold": 1415,
+          "revenue": 61471.47
+        },
+        {
+          "month": "2024-12",
+          "avg_price": 45.18,
+          "min_price": 39.16,
+          "max_price": 46.07,
+          "units_sold": 1264,
+          "revenue": 56705.37
+        },
+        {
+          "month": "2025-01",
+          "avg_price": 45.89,
+          "min_price": 39.2,
+          "max_price": 46.11,
+          "units_sold": 926,
+          "revenue": 42400.73
+        },
+        {
+          "month": "2025-02",
+          "avg_price": 45.37,
+          "min_price": 39.2,
+          "max_price": 46.11,
+          "units_sold": 937,
+          "revenue": 42113.29
+        },
+        {
+          "month": "2025-03",
+          "avg_price": 45.66,
+          "min_price": 39.2,
+          "max_price": 46.11,
+          "units_sold": 1173,
+          "revenue": 53257.83
+        },
+        {
+          "month": "2025-04",
+          "avg_price": 46.25,
+          "min_price": 39.51,
+          "max_price": 46.48,
+          "units_sold": 1157,
+          "revenue": 53387.04
+        },
+        {
+          "month": "2025-05",
+          "avg_price": 45.81,
+          "min_price": 39.51,
+          "max_price": 46.48,
+          "units_sold": 1463,
+          "revenue": 66571.39
+        },
+        {
+          "month": "2025-06",
+          "avg_price": 46.25,
+          "min_price": 39.51,
+          "max_price": 46.48,
+          "units_sold": 1337,
+          "revenue": 61516.46
+        },
+        {
+          "month": "2025-07",
+          "avg_price": 45.94,
+          "min_price": 39.82,
+          "max_price": 46.85,
+          "units_sold": 1440,
+          "revenue": 65530.75
+        },
+        {
+          "month": "2025-08",
+          "avg_price": 45.72,
+          "min_price": 39.82,
+          "max_price": 46.85,
+          "units_sold": 1418,
+          "revenue": 64324.3
+        },
+        {
+          "month": "2025-09",
+          "avg_price": 45.44,
+          "min_price": 39.82,
+          "max_price": 46.85,
+          "units_sold": 1196,
+          "revenue": 54014.99
+        },
+        {
+          "month": "2025-10",
+          "avg_price": 46.08,
+          "min_price": 40.14,
+          "max_price": 47.22,
+          "units_sold": 1117,
+          "revenue": 50875.62
+        },
+        {
+          "month": "2025-11",
+          "avg_price": 45.33,
+          "min_price": 40.14,
+          "max_price": 47.22,
+          "units_sold": 1367,
+          "revenue": 61420.38
+        },
+        {
+          "month": "2025-12",
+          "avg_price": 46.04,
+          "min_price": 40.14,
+          "max_price": 47.22,
+          "units_sold": 1237,
+          "revenue": 56414.58
+        }
+      ]
     },
     {
       "product_id": "PRD-105",
       "product_name": "Smart Fitness & Heart Rate Tracker",
       "category": "Wearables",
-      "units_sold": 27650,
-      "total_revenue": 2155143.5,
-      "avg_price": 78.44
+      "units_sold": 27881,
+      "total_revenue": 2226898.42,
+      "avg_price": 80.48,
+      "min_price": 67.99,
+      "max_price": 83.96,
+      "latest_price": 83.96,
+      "current_stock": 260,
+      "reorder_point": 130,
+      "lead_time_days": 5,
+      "stock_status": "Healthy Stock",
+      "stock_badge": "healthy",
+      "recent_daily_rate": 41.0,
+      "days_of_stock": 6,
+      "price_history": [
+        {
+          "month": "2024-01",
+          "avg_price": 79.22,
+          "min_price": 67.99,
+          "max_price": 79.99,
+          "units_sold": 867,
+          "revenue": 68571.33
+        },
+        {
+          "month": "2024-02",
+          "avg_price": 79.58,
+          "min_price": 67.99,
+          "max_price": 79.99,
+          "units_sold": 889,
+          "revenue": 70583.11
+        },
+        {
+          "month": "2024-03",
+          "avg_price": 78.83,
+          "min_price": 67.99,
+          "max_price": 79.99,
+          "units_sold": 1091,
+          "revenue": 85397.09
+        },
+        {
+          "month": "2024-04",
+          "avg_price": 79.42,
+          "min_price": 68.54,
+          "max_price": 80.63,
+          "units_sold": 1176,
+          "revenue": 92874.39
+        },
+        {
+          "month": "2024-05",
+          "avg_price": 78.68,
+          "min_price": 68.54,
+          "max_price": 80.63,
+          "units_sold": 1380,
+          "revenue": 107195.07
+        },
+        {
+          "month": "2024-06",
+          "avg_price": 79.02,
+          "min_price": 68.54,
+          "max_price": 80.63,
+          "units_sold": 1343,
+          "revenue": 105227.32
+        },
+        {
+          "month": "2024-07",
+          "avg_price": 80.48,
+          "min_price": 69.08,
+          "max_price": 81.27,
+          "units_sold": 1278,
+          "revenue": 102534.35
+        },
+        {
+          "month": "2024-08",
+          "avg_price": 78.52,
+          "min_price": 69.08,
+          "max_price": 81.27,
+          "units_sold": 1351,
+          "revenue": 104419.98
+        },
+        {
+          "month": "2024-09",
+          "avg_price": 80.05,
+          "min_price": 69.08,
+          "max_price": 81.27,
+          "units_sold": 1088,
+          "revenue": 86690.78
+        },
+        {
+          "month": "2024-10",
+          "avg_price": 81.51,
+          "min_price": 69.62,
+          "max_price": 81.91,
+          "units_sold": 963,
+          "revenue": 78326.28
+        },
+        {
+          "month": "2024-11",
+          "avg_price": 78.22,
+          "min_price": 69.62,
+          "max_price": 81.91,
+          "units_sold": 1332,
+          "revenue": 103229.5
+        },
+        {
+          "month": "2024-12",
+          "avg_price": 80.32,
+          "min_price": 69.62,
+          "max_price": 81.91,
+          "units_sold": 1195,
+          "revenue": 95449.03
+        },
+        {
+          "month": "2025-01",
+          "avg_price": 81.59,
+          "min_price": 69.69,
+          "max_price": 81.99,
+          "units_sold": 901,
+          "revenue": 73196.49
+        },
+        {
+          "month": "2025-02",
+          "avg_price": 80.67,
+          "min_price": 69.69,
+          "max_price": 81.99,
+          "units_sold": 905,
+          "revenue": 72245.25
+        },
+        {
+          "month": "2025-03",
+          "avg_price": 81.2,
+          "min_price": 69.69,
+          "max_price": 81.99,
+          "units_sold": 1120,
+          "revenue": 90438.9
+        },
+        {
+          "month": "2025-04",
+          "avg_price": 82.24,
+          "min_price": 70.25,
+          "max_price": 82.65,
+          "units_sold": 1133,
+          "revenue": 93059.65
+        },
+        {
+          "month": "2025-05",
+          "avg_price": 81.45,
+          "min_price": 70.25,
+          "max_price": 82.65,
+          "units_sold": 1339,
+          "revenue": 108547.95
+        },
+        {
+          "month": "2025-06",
+          "avg_price": 82.24,
+          "min_price": 70.25,
+          "max_price": 82.65,
+          "units_sold": 1288,
+          "revenue": 105548.0
+        },
+        {
+          "month": "2025-07",
+          "avg_price": 81.69,
+          "min_price": 70.81,
+          "max_price": 83.3,
+          "units_sold": 1340,
+          "revenue": 108561.95
+        },
+        {
+          "month": "2025-08",
+          "avg_price": 81.29,
+          "min_price": 70.81,
+          "max_price": 83.3,
+          "units_sold": 1276,
+          "revenue": 102893.52
+        },
+        {
+          "month": "2025-09",
+          "avg_price": 80.8,
+          "min_price": 70.81,
+          "max_price": 83.3,
+          "units_sold": 1117,
+          "revenue": 89124.24
+        },
+        {
+          "month": "2025-10",
+          "avg_price": 81.93,
+          "min_price": 71.36,
+          "max_price": 83.96,
+          "units_sold": 1039,
+          "revenue": 84197.84
+        },
+        {
+          "month": "2025-11",
+          "avg_price": 80.6,
+          "min_price": 71.36,
+          "max_price": 83.96,
+          "units_sold": 1296,
+          "revenue": 103784.76
+        },
+        {
+          "month": "2025-12",
+          "avg_price": 81.86,
+          "min_price": 71.36,
+          "max_price": 83.96,
+          "units_sold": 1174,
+          "revenue": 94801.64
+        }
+      ]
     },
     {
       "product_id": "PRD-102",
       "product_name": "Ergonomic Mechanical Keyboard",
       "category": "Peripherals",
-      "units_sold": 25905,
-      "total_revenue": 2271750.45,
-      "avg_price": 88.25
+      "units_sold": 26075,
+      "total_revenue": 2345154.6,
+      "avg_price": 90.54,
+      "min_price": 76.49,
+      "max_price": 94.45,
+      "latest_price": 94.45,
+      "current_stock": 310,
+      "reorder_point": 120,
+      "lead_time_days": 3,
+      "stock_status": "Healthy Stock",
+      "stock_badge": "healthy",
+      "recent_daily_rate": 37.5,
+      "days_of_stock": 8,
+      "price_history": [
+        {
+          "month": "2024-01",
+          "avg_price": 89.12,
+          "min_price": 76.49,
+          "max_price": 89.99,
+          "units_sold": 831,
+          "revenue": 73904.19
+        },
+        {
+          "month": "2024-02",
+          "avg_price": 89.52,
+          "min_price": 76.49,
+          "max_price": 89.99,
+          "units_sold": 814,
+          "revenue": 72725.36
+        },
+        {
+          "month": "2024-03",
+          "avg_price": 88.68,
+          "min_price": 76.49,
+          "max_price": 89.99,
+          "units_sold": 1061,
+          "revenue": 93683.89
+        },
+        {
+          "month": "2024-04",
+          "avg_price": 89.35,
+          "min_price": 77.1,
+          "max_price": 90.71,
+          "units_sold": 1064,
+          "revenue": 94678.09
+        },
+        {
+          "month": "2024-05",
+          "avg_price": 88.51,
+          "min_price": 77.1,
+          "max_price": 90.71,
+          "units_sold": 1217,
+          "revenue": 106855.47
+        },
+        {
+          "month": "2024-06",
+          "avg_price": 88.9,
+          "min_price": 77.1,
+          "max_price": 90.71,
+          "units_sold": 1303,
+          "revenue": 115037.61
+        },
+        {
+          "month": "2024-07",
+          "avg_price": 90.55,
+          "min_price": 77.72,
+          "max_price": 91.43,
+          "units_sold": 1207,
+          "revenue": 108861.62
+        },
+        {
+          "month": "2024-08",
+          "avg_price": 88.33,
+          "min_price": 77.72,
+          "max_price": 91.43,
+          "units_sold": 1242,
+          "revenue": 108264.0
+        },
+        {
+          "month": "2024-09",
+          "avg_price": 90.06,
+          "min_price": 77.72,
+          "max_price": 91.43,
+          "units_sold": 1014,
+          "revenue": 90914.01
+        },
+        {
+          "month": "2024-10",
+          "avg_price": 91.7,
+          "min_price": 78.33,
+          "max_price": 92.15,
+          "units_sold": 890,
+          "revenue": 81474.52
+        },
+        {
+          "month": "2024-11",
+          "avg_price": 88.0,
+          "min_price": 78.33,
+          "max_price": 92.15,
+          "units_sold": 1219,
+          "revenue": 105973.65
+        },
+        {
+          "month": "2024-12",
+          "avg_price": 90.37,
+          "min_price": 78.33,
+          "max_price": 92.15,
+          "units_sold": 1132,
+          "revenue": 101535.98
+        },
+        {
+          "month": "2025-01",
+          "avg_price": 91.79,
+          "min_price": 78.4,
+          "max_price": 92.24,
+          "units_sold": 831,
+          "revenue": 75945.6
+        },
+        {
+          "month": "2025-02",
+          "avg_price": 90.76,
+          "min_price": 78.4,
+          "max_price": 92.24,
+          "units_sold": 834,
+          "revenue": 75142.8
+        },
+        {
+          "month": "2025-03",
+          "avg_price": 91.35,
+          "min_price": 78.4,
+          "max_price": 92.24,
+          "units_sold": 1042,
+          "revenue": 94785.44
+        },
+        {
+          "month": "2025-04",
+          "avg_price": 92.52,
+          "min_price": 79.03,
+          "max_price": 92.98,
+          "units_sold": 1049,
+          "revenue": 96950.12
+        },
+        {
+          "month": "2025-05",
+          "avg_price": 91.63,
+          "min_price": 79.03,
+          "max_price": 92.98,
+          "units_sold": 1260,
+          "revenue": 114950.7
+        },
+        {
+          "month": "2025-06",
+          "avg_price": 92.52,
+          "min_price": 79.03,
+          "max_price": 92.98,
+          "units_sold": 1192,
+          "revenue": 109869.61
+        },
+        {
+          "month": "2025-07",
+          "avg_price": 91.91,
+          "min_price": 79.66,
+          "max_price": 93.72,
+          "units_sold": 1295,
+          "revenue": 117880.52
+        },
+        {
+          "month": "2025-08",
+          "avg_price": 91.45,
+          "min_price": 79.66,
+          "max_price": 93.72,
+          "units_sold": 1215,
+          "revenue": 110706.3
+        },
+        {
+          "month": "2025-09",
+          "avg_price": 90.91,
+          "min_price": 79.66,
+          "max_price": 93.72,
+          "units_sold": 1055,
+          "revenue": 95162.76
+        },
+        {
+          "month": "2025-10",
+          "avg_price": 92.17,
+          "min_price": 80.29,
+          "max_price": 94.45,
+          "units_sold": 972,
+          "revenue": 88676.04
+        },
+        {
+          "month": "2025-11",
+          "avg_price": 90.67,
+          "min_price": 80.29,
+          "max_price": 94.45,
+          "units_sold": 1250,
+          "revenue": 112186.1
+        },
+        {
+          "month": "2025-12",
+          "avg_price": 92.09,
+          "min_price": 80.29,
+          "max_price": 94.45,
+          "units_sold": 1086,
+          "revenue": 98990.22
+        }
+      ]
     },
     {
       "product_id": "PRD-106",
       "product_name": "High-Speed NVMe 1TB Portable SSD",
       "category": "Storage",
-      "units_sold": 21998,
-      "total_revenue": 2572022.02,
-      "avg_price": 117.67
+      "units_sold": 22282,
+      "total_revenue": 2671311.77,
+      "avg_price": 120.72,
+      "min_price": 101.99,
+      "max_price": 125.94,
+      "latest_price": 125.94,
+      "current_stock": 190,
+      "reorder_point": 100,
+      "lead_time_days": 4,
+      "stock_status": "Healthy Stock",
+      "stock_badge": "healthy",
+      "recent_daily_rate": 31.3,
+      "days_of_stock": 6,
+      "price_history": [
+        {
+          "month": "2024-01",
+          "avg_price": 118.83,
+          "min_price": 101.99,
+          "max_price": 119.99,
+          "units_sold": 696,
+          "revenue": 82505.04
+        },
+        {
+          "month": "2024-02",
+          "avg_price": 119.37,
+          "min_price": 101.99,
+          "max_price": 119.99,
+          "units_sold": 728,
+          "revenue": 86632.72
+        },
+        {
+          "month": "2024-03",
+          "avg_price": 118.25,
+          "min_price": 101.99,
+          "max_price": 119.99,
+          "units_sold": 905,
+          "revenue": 106016.95
+        },
+        {
+          "month": "2024-04",
+          "avg_price": 119.14,
+          "min_price": 102.81,
+          "max_price": 120.95,
+          "units_sold": 913,
+          "revenue": 108377.53
+        },
+        {
+          "month": "2024-05",
+          "avg_price": 118.02,
+          "min_price": 102.81,
+          "max_price": 120.95,
+          "units_sold": 1088,
+          "revenue": 126822.78
+        },
+        {
+          "month": "2024-06",
+          "avg_price": 118.53,
+          "min_price": 102.81,
+          "max_price": 120.95,
+          "units_sold": 1090,
+          "revenue": 128243.78
+        },
+        {
+          "month": "2024-07",
+          "avg_price": 120.73,
+          "min_price": 103.62,
+          "max_price": 121.91,
+          "units_sold": 1029,
+          "revenue": 123909.03
+        },
+        {
+          "month": "2024-08",
+          "avg_price": 117.78,
+          "min_price": 103.62,
+          "max_price": 121.91,
+          "units_sold": 1074,
+          "revenue": 124712.74
+        },
+        {
+          "month": "2024-09",
+          "avg_price": 120.08,
+          "min_price": 103.62,
+          "max_price": 121.91,
+          "units_sold": 879,
+          "revenue": 104909.22
+        },
+        {
+          "month": "2024-10",
+          "avg_price": 122.28,
+          "min_price": 104.44,
+          "max_price": 122.87,
+          "units_sold": 753,
+          "revenue": 92023.5
+        },
+        {
+          "month": "2024-11",
+          "avg_price": 117.34,
+          "min_price": 104.44,
+          "max_price": 122.87,
+          "units_sold": 1045,
+          "revenue": 121008.72
+        },
+        {
+          "month": "2024-12",
+          "avg_price": 120.49,
+          "min_price": 104.44,
+          "max_price": 122.87,
+          "units_sold": 965,
+          "revenue": 115289.01
+        },
+        {
+          "month": "2025-01",
+          "avg_price": 122.39,
+          "min_price": 104.54,
+          "max_price": 122.99,
+          "units_sold": 699,
+          "revenue": 85047.51
+        },
+        {
+          "month": "2025-02",
+          "avg_price": 121.01,
+          "min_price": 104.54,
+          "max_price": 122.99,
+          "units_sold": 714,
+          "revenue": 85803.81
+        },
+        {
+          "month": "2025-03",
+          "avg_price": 121.8,
+          "min_price": 104.54,
+          "max_price": 122.99,
+          "units_sold": 850,
+          "revenue": 103194.65
+        },
+        {
+          "month": "2025-04",
+          "avg_price": 123.35,
+          "min_price": 105.38,
+          "max_price": 123.97,
+          "units_sold": 907,
+          "revenue": 111752.96
+        },
+        {
+          "month": "2025-05",
+          "avg_price": 122.17,
+          "min_price": 105.38,
+          "max_price": 123.97,
+          "units_sold": 1080,
+          "revenue": 131247.82
+        },
+        {
+          "month": "2025-06",
+          "avg_price": 123.35,
+          "min_price": 105.38,
+          "max_price": 123.97,
+          "units_sold": 1048,
+          "revenue": 128935.29
+        },
+        {
+          "month": "2025-07",
+          "avg_price": 122.54,
+          "min_price": 106.21,
+          "max_price": 124.96,
+          "units_sold": 1072,
+          "revenue": 130319.62
+        },
+        {
+          "month": "2025-08",
+          "avg_price": 121.94,
+          "min_price": 106.21,
+          "max_price": 124.96,
+          "units_sold": 1071,
+          "revenue": 129838.41
+        },
+        {
+          "month": "2025-09",
+          "avg_price": 121.21,
+          "min_price": 106.21,
+          "max_price": 124.96,
+          "units_sold": 904,
+          "revenue": 108951.34
+        },
+        {
+          "month": "2025-10",
+          "avg_price": 122.89,
+          "min_price": 107.05,
+          "max_price": 125.94,
+          "units_sold": 862,
+          "revenue": 104876.73
+        },
+        {
+          "month": "2025-11",
+          "avg_price": 120.9,
+          "min_price": 107.05,
+          "max_price": 125.94,
+          "units_sold": 1004,
+          "revenue": 120757.87
+        },
+        {
+          "month": "2025-12",
+          "avg_price": 122.79,
+          "min_price": 107.05,
+          "max_price": 125.94,
+          "units_sold": 906,
+          "revenue": 110134.74
+        }
+      ]
+    },
+    {
+      "product_id": "PRD-115",
+      "product_name": "Wi-Fi 6 Dual-Band Mesh Router System",
+      "category": "Networking",
+      "units_sold": 20271,
+      "total_revenue": 3240397.45,
+      "avg_price": 160.96,
+      "min_price": 135.99,
+      "max_price": 167.93,
+      "latest_price": 167.93,
+      "current_stock": 175,
+      "reorder_point": 80,
+      "lead_time_days": 6,
+      "stock_status": "Healthy Stock",
+      "stock_badge": "healthy",
+      "recent_daily_rate": 30.5,
+      "days_of_stock": 6,
+      "price_history": [
+        {
+          "month": "2024-01",
+          "avg_price": 158.44,
+          "min_price": 135.99,
+          "max_price": 159.99,
+          "units_sold": 626,
+          "revenue": 98881.74
+        },
+        {
+          "month": "2024-02",
+          "avg_price": 159.16,
+          "min_price": 135.99,
+          "max_price": 159.99,
+          "units_sold": 649,
+          "revenue": 102921.51
+        },
+        {
+          "month": "2024-03",
+          "avg_price": 157.67,
+          "min_price": 135.99,
+          "max_price": 159.99,
+          "units_sold": 797,
+          "revenue": 124992.03
+        },
+        {
+          "month": "2024-04",
+          "avg_price": 158.85,
+          "min_price": 137.08,
+          "max_price": 161.27,
+          "units_sold": 859,
+          "revenue": 135942.6
+        },
+        {
+          "month": "2024-05",
+          "avg_price": 157.37,
+          "min_price": 137.08,
+          "max_price": 161.27,
+          "units_sold": 943,
+          "revenue": 146973.52
+        },
+        {
+          "month": "2024-06",
+          "avg_price": 158.04,
+          "min_price": 137.08,
+          "max_price": 161.27,
+          "units_sold": 973,
+          "revenue": 152803.41
+        },
+        {
+          "month": "2024-07",
+          "avg_price": 160.98,
+          "min_price": 138.17,
+          "max_price": 162.55,
+          "units_sold": 967,
+          "revenue": 154820.99
+        },
+        {
+          "month": "2024-08",
+          "avg_price": 157.04,
+          "min_price": 138.17,
+          "max_price": 162.55,
+          "units_sold": 970,
+          "revenue": 150871.48
+        },
+        {
+          "month": "2024-09",
+          "avg_price": 160.11,
+          "min_price": 138.17,
+          "max_price": 162.55,
+          "units_sold": 799,
+          "revenue": 127293.17
+        },
+        {
+          "month": "2024-10",
+          "avg_price": 163.04,
+          "min_price": 139.26,
+          "max_price": 163.83,
+          "units_sold": 690,
+          "revenue": 112354.74
+        },
+        {
+          "month": "2024-11",
+          "avg_price": 156.46,
+          "min_price": 139.26,
+          "max_price": 163.83,
+          "units_sold": 964,
+          "revenue": 149529.18
+        },
+        {
+          "month": "2024-12",
+          "avg_price": 160.66,
+          "min_price": 139.26,
+          "max_price": 163.83,
+          "units_sold": 871,
+          "revenue": 138469.89
+        },
+        {
+          "month": "2025-01",
+          "avg_price": 163.2,
+          "min_price": 139.39,
+          "max_price": 163.99,
+          "units_sold": 649,
+          "revenue": 105470.11
+        },
+        {
+          "month": "2025-02",
+          "avg_price": 161.35,
+          "min_price": 139.39,
+          "max_price": 163.99,
+          "units_sold": 631,
+          "revenue": 100870.09
+        },
+        {
+          "month": "2025-03",
+          "avg_price": 162.4,
+          "min_price": 139.39,
+          "max_price": 163.99,
+          "units_sold": 797,
+          "revenue": 128830.43
+        },
+        {
+          "month": "2025-04",
+          "avg_price": 164.47,
+          "min_price": 140.51,
+          "max_price": 165.3,
+          "units_sold": 832,
+          "revenue": 136885.06
+        },
+        {
+          "month": "2025-05",
+          "avg_price": 162.9,
+          "min_price": 140.51,
+          "max_price": 165.3,
+          "units_sold": 970,
+          "revenue": 157143.09
+        },
+        {
+          "month": "2025-06",
+          "avg_price": 164.47,
+          "min_price": 140.51,
+          "max_price": 165.3,
+          "units_sold": 954,
+          "revenue": 156431.91
+        },
+        {
+          "month": "2025-07",
+          "avg_price": 163.39,
+          "min_price": 141.62,
+          "max_price": 166.61,
+          "units_sold": 970,
+          "revenue": 157088.51
+        },
+        {
+          "month": "2025-08",
+          "avg_price": 162.58,
+          "min_price": 141.62,
+          "max_price": 166.61,
+          "units_sold": 949,
+          "revenue": 153214.85
+        },
+        {
+          "month": "2025-09",
+          "avg_price": 161.61,
+          "min_price": 141.62,
+          "max_price": 166.61,
+          "units_sold": 829,
+          "revenue": 132646.88
+        },
+        {
+          "month": "2025-10",
+          "avg_price": 163.87,
+          "min_price": 142.74,
+          "max_price": 167.93,
+          "units_sold": 759,
+          "revenue": 123176.57
+        },
+        {
+          "month": "2025-11",
+          "avg_price": 161.21,
+          "min_price": 142.74,
+          "max_price": 167.93,
+          "units_sold": 941,
+          "revenue": 150137.66
+        },
+        {
+          "month": "2025-12",
+          "avg_price": 163.73,
+          "min_price": 142.74,
+          "max_price": 167.93,
+          "units_sold": 882,
+          "revenue": 142648.03
+        }
+      ]
     },
     {
       "product_id": "PRD-108",
       "product_name": "Studio Condenser Podcast Microphone",
       "category": "Audio",
-      "units_sold": 18489,
-      "total_revenue": 2341531.11,
-      "avg_price": 127.48
+      "units_sold": 18482,
+      "total_revenue": 2401555.52,
+      "avg_price": 130.78,
+      "min_price": 110.49,
+      "max_price": 136.44,
+      "latest_price": 136.44,
+      "current_stock": 160,
+      "reorder_point": 90,
+      "lead_time_days": 5,
+      "stock_status": "Healthy Stock",
+      "stock_badge": "healthy",
+      "recent_daily_rate": 26.4,
+      "days_of_stock": 6,
+      "price_history": [
+        {
+          "month": "2024-01",
+          "avg_price": 128.73,
+          "min_price": 110.49,
+          "max_price": 129.99,
+          "units_sold": 599,
+          "revenue": 76986.51
+        },
+        {
+          "month": "2024-02",
+          "avg_price": 129.32,
+          "min_price": 110.49,
+          "max_price": 129.99,
+          "units_sold": 598,
+          "revenue": 77012.52
+        },
+        {
+          "month": "2024-03",
+          "avg_price": 128.1,
+          "min_price": 110.49,
+          "max_price": 129.99,
+          "units_sold": 718,
+          "revenue": 91402.32
+        },
+        {
+          "month": "2024-04",
+          "avg_price": 129.06,
+          "min_price": 111.38,
+          "max_price": 131.03,
+          "units_sold": 757,
+          "revenue": 97381.91
+        },
+        {
+          "month": "2024-05",
+          "avg_price": 127.86,
+          "min_price": 111.38,
+          "max_price": 131.03,
+          "units_sold": 905,
+          "revenue": 114691.45
+        },
+        {
+          "month": "2024-06",
+          "avg_price": 128.41,
+          "min_price": 111.38,
+          "max_price": 131.03,
+          "units_sold": 910,
+          "revenue": 116054.0
+        },
+        {
+          "month": "2024-07",
+          "avg_price": 130.79,
+          "min_price": 112.26,
+          "max_price": 132.07,
+          "units_sold": 866,
+          "revenue": 112668.96
+        },
+        {
+          "month": "2024-08",
+          "avg_price": 127.6,
+          "min_price": 112.26,
+          "max_price": 132.07,
+          "units_sold": 857,
+          "revenue": 108053.2
+        },
+        {
+          "month": "2024-09",
+          "avg_price": 130.09,
+          "min_price": 112.26,
+          "max_price": 132.07,
+          "units_sold": 737,
+          "revenue": 95354.59
+        },
+        {
+          "month": "2024-10",
+          "avg_price": 132.47,
+          "min_price": 113.14,
+          "max_price": 133.11,
+          "units_sold": 628,
+          "revenue": 83133.77
+        },
+        {
+          "month": "2024-11",
+          "avg_price": 127.12,
+          "min_price": 113.14,
+          "max_price": 133.11,
+          "units_sold": 831,
+          "revenue": 104563.5
+        },
+        {
+          "month": "2024-12",
+          "avg_price": 130.53,
+          "min_price": 113.14,
+          "max_price": 133.11,
+          "units_sold": 850,
+          "revenue": 109988.24
+        },
+        {
+          "month": "2025-01",
+          "avg_price": 132.6,
+          "min_price": 113.25,
+          "max_price": 133.24,
+          "units_sold": 550,
+          "revenue": 72662.31
+        },
+        {
+          "month": "2025-02",
+          "avg_price": 131.1,
+          "min_price": 113.25,
+          "max_price": 133.24,
+          "units_sold": 597,
+          "revenue": 77545.28
+        },
+        {
+          "month": "2025-03",
+          "avg_price": 131.95,
+          "min_price": 113.25,
+          "max_price": 133.24,
+          "units_sold": 711,
+          "revenue": 93454.28
+        },
+        {
+          "month": "2025-04",
+          "avg_price": 133.64,
+          "min_price": 114.16,
+          "max_price": 134.31,
+          "units_sold": 761,
+          "revenue": 101504.66
+        },
+        {
+          "month": "2025-05",
+          "avg_price": 132.36,
+          "min_price": 114.16,
+          "max_price": 134.31,
+          "units_sold": 889,
+          "revenue": 117426.89
+        },
+        {
+          "month": "2025-06",
+          "avg_price": 133.64,
+          "min_price": 114.16,
+          "max_price": 134.31,
+          "units_sold": 888,
+          "revenue": 118138.88
+        },
+        {
+          "month": "2025-07",
+          "avg_price": 132.75,
+          "min_price": 115.07,
+          "max_price": 135.37,
+          "units_sold": 901,
+          "revenue": 118456.47
+        },
+        {
+          "month": "2025-08",
+          "avg_price": 132.1,
+          "min_price": 115.07,
+          "max_price": 135.37,
+          "units_sold": 832,
+          "revenue": 109704.64
+        },
+        {
+          "month": "2025-09",
+          "avg_price": 131.31,
+          "min_price": 115.07,
+          "max_price": 135.37,
+          "units_sold": 746,
+          "revenue": 97210.22
+        },
+        {
+          "month": "2025-10",
+          "avg_price": 133.14,
+          "min_price": 115.97,
+          "max_price": 136.44,
+          "units_sold": 711,
+          "revenue": 93815.52
+        },
+        {
+          "month": "2025-11",
+          "avg_price": 130.98,
+          "min_price": 115.97,
+          "max_price": 136.44,
+          "units_sold": 885,
+          "revenue": 114894.98
+        },
+        {
+          "month": "2025-12",
+          "avg_price": 133.03,
+          "min_price": 115.97,
+          "max_price": 136.44,
+          "units_sold": 755,
+          "revenue": 99450.42
+        }
+      ]
     },
     {
       "product_id": "PRD-103",
       "product_name": "Ultra-HD 4K 27-inch Monitor",
       "category": "Displays",
-      "units_sold": 16613,
-      "total_revenue": 4856068.87,
-      "avg_price": 294.2
+      "units_sold": 16700,
+      "total_revenue": 5005747.38,
+      "avg_price": 301.81,
+      "min_price": 254.99,
+      "max_price": 314.87,
+      "latest_price": 314.87,
+      "current_stock": 140,
+      "reorder_point": 80,
+      "lead_time_days": 7,
+      "stock_status": "Healthy Stock",
+      "stock_badge": "healthy",
+      "recent_daily_rate": 24.5,
+      "days_of_stock": 6,
+      "price_history": [
+        {
+          "month": "2024-01",
+          "avg_price": 297.09,
+          "min_price": 254.99,
+          "max_price": 299.99,
+          "units_sold": 526,
+          "revenue": 155859.74
+        },
+        {
+          "month": "2024-02",
+          "avg_price": 298.44,
+          "min_price": 254.99,
+          "max_price": 299.99,
+          "units_sold": 530,
+          "revenue": 157599.7
+        },
+        {
+          "month": "2024-03",
+          "avg_price": 295.64,
+          "min_price": 254.99,
+          "max_price": 299.99,
+          "units_sold": 689,
+          "revenue": 202463.11
+        },
+        {
+          "month": "2024-04",
+          "avg_price": 297.85,
+          "min_price": 257.03,
+          "max_price": 302.39,
+          "units_sold": 701,
+          "revenue": 207802.27
+        },
+        {
+          "month": "2024-05",
+          "avg_price": 295.07,
+          "min_price": 257.03,
+          "max_price": 302.39,
+          "units_sold": 797,
+          "revenue": 233066.83
+        },
+        {
+          "month": "2024-06",
+          "avg_price": 296.34,
+          "min_price": 257.03,
+          "max_price": 302.39,
+          "units_sold": 830,
+          "revenue": 243635.38
+        },
+        {
+          "month": "2024-07",
+          "avg_price": 301.84,
+          "min_price": 259.07,
+          "max_price": 304.79,
+          "units_sold": 776,
+          "revenue": 233270.92
+        },
+        {
+          "month": "2024-08",
+          "avg_price": 294.47,
+          "min_price": 259.07,
+          "max_price": 304.79,
+          "units_sold": 796,
+          "revenue": 231045.68
+        },
+        {
+          "month": "2024-09",
+          "avg_price": 300.22,
+          "min_price": 259.07,
+          "max_price": 304.79,
+          "units_sold": 638,
+          "revenue": 190706.98
+        },
+        {
+          "month": "2024-10",
+          "avg_price": 305.7,
+          "min_price": 261.11,
+          "max_price": 307.19,
+          "units_sold": 580,
+          "revenue": 177202.52
+        },
+        {
+          "month": "2024-11",
+          "avg_price": 293.37,
+          "min_price": 261.11,
+          "max_price": 307.19,
+          "units_sold": 782,
+          "revenue": 226813.3
+        },
+        {
+          "month": "2024-12",
+          "avg_price": 301.24,
+          "min_price": 261.11,
+          "max_price": 307.19,
+          "units_sold": 727,
+          "revenue": 216922.01
+        },
+        {
+          "month": "2025-01",
+          "avg_price": 306.0,
+          "min_price": 261.37,
+          "max_price": 307.49,
+          "units_sold": 536,
+          "revenue": 163615.52
+        },
+        {
+          "month": "2025-02",
+          "avg_price": 302.55,
+          "min_price": 261.37,
+          "max_price": 307.49,
+          "units_sold": 524,
+          "revenue": 157158.44
+        },
+        {
+          "month": "2025-03",
+          "avg_price": 304.51,
+          "min_price": 261.37,
+          "max_price": 307.49,
+          "units_sold": 648,
+          "revenue": 196394.08
+        },
+        {
+          "month": "2025-04",
+          "avg_price": 308.4,
+          "min_price": 263.46,
+          "max_price": 309.95,
+          "units_sold": 696,
+          "revenue": 214330.5
+        },
+        {
+          "month": "2025-05",
+          "avg_price": 305.45,
+          "min_price": 263.46,
+          "max_price": 309.95,
+          "units_sold": 767,
+          "revenue": 233268.61
+        },
+        {
+          "month": "2025-06",
+          "avg_price": 308.4,
+          "min_price": 263.46,
+          "max_price": 309.95,
+          "units_sold": 801,
+          "revenue": 245991.94
+        },
+        {
+          "month": "2025-07",
+          "avg_price": 306.36,
+          "min_price": 265.55,
+          "max_price": 312.41,
+          "units_sold": 781,
+          "revenue": 237338.09
+        },
+        {
+          "month": "2025-08",
+          "avg_price": 304.85,
+          "min_price": 265.55,
+          "max_price": 312.41,
+          "units_sold": 774,
+          "revenue": 234823.2
+        },
+        {
+          "month": "2025-09",
+          "avg_price": 303.04,
+          "min_price": 265.55,
+          "max_price": 312.41,
+          "units_sold": 676,
+          "revenue": 203363.54
+        },
+        {
+          "month": "2025-10",
+          "avg_price": 307.25,
+          "min_price": 267.64,
+          "max_price": 314.87,
+          "units_sold": 626,
+          "revenue": 190496.42
+        },
+        {
+          "month": "2025-11",
+          "avg_price": 302.28,
+          "min_price": 267.64,
+          "max_price": 314.87,
+          "units_sold": 791,
+          "revenue": 237774.2
+        },
+        {
+          "month": "2025-12",
+          "avg_price": 307.0,
+          "min_price": 267.64,
+          "max_price": 314.87,
+          "units_sold": 708,
+          "revenue": 214804.4
+        }
+      ]
+    },
+    {
+      "product_id": "PRD-116",
+      "product_name": "Thermal Wireless Barcode & Label Printer",
+      "category": "Warehouse & POS",
+      "units_sold": 14786,
+      "total_revenue": 1625337.75,
+      "avg_price": 110.66,
+      "min_price": 93.49,
+      "max_price": 115.45,
+      "latest_price": 115.45,
+      "current_stock": 45,
+      "reorder_point": 60,
+      "lead_time_days": 5,
+      "stock_status": "Critical Reorder",
+      "stock_badge": "critical",
+      "recent_daily_rate": 21.6,
+      "days_of_stock": 2,
+      "price_history": [
+        {
+          "month": "2024-01",
+          "avg_price": 108.93,
+          "min_price": 93.49,
+          "max_price": 109.99,
+          "units_sold": 462,
+          "revenue": 50221.38
+        },
+        {
+          "month": "2024-02",
+          "avg_price": 109.42,
+          "min_price": 93.49,
+          "max_price": 109.99,
+          "units_sold": 454,
+          "revenue": 49456.96
+        },
+        {
+          "month": "2024-03",
+          "avg_price": 108.39,
+          "min_price": 93.49,
+          "max_price": 109.99,
+          "units_sold": 582,
+          "revenue": 62727.18
+        },
+        {
+          "month": "2024-04",
+          "avg_price": 109.21,
+          "min_price": 94.24,
+          "max_price": 110.87,
+          "units_sold": 635,
+          "revenue": 69221.72
+        },
+        {
+          "month": "2024-05",
+          "avg_price": 108.19,
+          "min_price": 94.24,
+          "max_price": 110.87,
+          "units_sold": 733,
+          "revenue": 78540.39
+        },
+        {
+          "month": "2024-06",
+          "avg_price": 108.65,
+          "min_price": 94.24,
+          "max_price": 110.87,
+          "units_sold": 715,
+          "revenue": 76910.59
+        },
+        {
+          "month": "2024-07",
+          "avg_price": 110.67,
+          "min_price": 94.99,
+          "max_price": 111.75,
+          "units_sold": 697,
+          "revenue": 76800.35
+        },
+        {
+          "month": "2024-08",
+          "avg_price": 107.97,
+          "min_price": 94.99,
+          "max_price": 111.75,
+          "units_sold": 710,
+          "revenue": 75554.74
+        },
+        {
+          "month": "2024-09",
+          "avg_price": 110.07,
+          "min_price": 94.99,
+          "max_price": 111.75,
+          "units_sold": 604,
+          "revenue": 66206.48
+        },
+        {
+          "month": "2024-10",
+          "avg_price": 112.09,
+          "min_price": 95.74,
+          "max_price": 112.63,
+          "units_sold": 507,
+          "revenue": 56833.17
+        },
+        {
+          "month": "2024-11",
+          "avg_price": 107.56,
+          "min_price": 95.74,
+          "max_price": 112.63,
+          "units_sold": 679,
+          "revenue": 72287.05
+        },
+        {
+          "month": "2024-12",
+          "avg_price": 110.45,
+          "min_price": 95.74,
+          "max_price": 112.63,
+          "units_sold": 633,
+          "revenue": 69369.33
+        },
+        {
+          "month": "2025-01",
+          "avg_price": 112.19,
+          "min_price": 95.83,
+          "max_price": 112.74,
+          "units_sold": 458,
+          "revenue": 51161.44
+        },
+        {
+          "month": "2025-02",
+          "avg_price": 110.93,
+          "min_price": 95.83,
+          "max_price": 112.74,
+          "units_sold": 474,
+          "revenue": 52153.6
+        },
+        {
+          "month": "2025-03",
+          "avg_price": 111.65,
+          "min_price": 95.83,
+          "max_price": 112.74,
+          "units_sold": 584,
+          "revenue": 64943.93
+        },
+        {
+          "month": "2025-04",
+          "avg_price": 113.07,
+          "min_price": 96.6,
+          "max_price": 113.64,
+          "units_sold": 621,
+          "revenue": 70110.36
+        },
+        {
+          "month": "2025-05",
+          "avg_price": 111.99,
+          "min_price": 96.6,
+          "max_price": 113.64,
+          "units_sold": 691,
+          "revenue": 77093.88
+        },
+        {
+          "month": "2025-06",
+          "avg_price": 113.07,
+          "min_price": 96.6,
+          "max_price": 113.64,
+          "units_sold": 700,
+          "revenue": 78951.6
+        },
+        {
+          "month": "2025-07",
+          "avg_price": 112.32,
+          "min_price": 97.36,
+          "max_price": 114.54,
+          "units_sold": 689,
+          "revenue": 76701.84
+        },
+        {
+          "month": "2025-08",
+          "avg_price": 111.77,
+          "min_price": 97.36,
+          "max_price": 114.54,
+          "units_sold": 697,
+          "revenue": 77394.82
+        },
+        {
+          "month": "2025-09",
+          "avg_price": 111.1,
+          "min_price": 97.36,
+          "max_price": 114.54,
+          "units_sold": 607,
+          "revenue": 66931.6
+        },
+        {
+          "month": "2025-10",
+          "avg_price": 112.66,
+          "min_price": 98.13,
+          "max_price": 115.45,
+          "units_sold": 549,
+          "revenue": 61303.65
+        },
+        {
+          "month": "2025-11",
+          "avg_price": 110.83,
+          "min_price": 98.13,
+          "max_price": 115.45,
+          "units_sold": 685,
+          "revenue": 75411.41
+        },
+        {
+          "month": "2025-12",
+          "avg_price": 112.56,
+          "min_price": 98.13,
+          "max_price": 115.45,
+          "units_sold": 620,
+          "revenue": 69050.28
+        }
+      ]
+    },
+    {
+      "product_id": "PRD-110",
+      "product_name": "Ultra-Wide 34-inch Curved Gaming Display",
+      "category": "Displays",
+      "units_sold": 11111,
+      "total_revenue": 4995235.26,
+      "avg_price": 452.72,
+      "min_price": 382.49,
+      "max_price": 472.31,
+      "latest_price": 472.31,
+      "current_stock": 65,
+      "reorder_point": 50,
+      "lead_time_days": 8,
+      "stock_status": "Healthy Stock",
+      "stock_badge": "healthy",
+      "recent_daily_rate": 15.4,
+      "days_of_stock": 4,
+      "price_history": [
+        {
+          "month": "2024-01",
+          "avg_price": 445.64,
+          "min_price": 382.49,
+          "max_price": 449.99,
+          "units_sold": 363,
+          "revenue": 161186.37
+        },
+        {
+          "month": "2024-02",
+          "avg_price": 447.66,
+          "min_price": 382.49,
+          "max_price": 449.99,
+          "units_sold": 340,
+          "revenue": 151646.6
+        },
+        {
+          "month": "2024-03",
+          "avg_price": 443.46,
+          "min_price": 382.49,
+          "max_price": 449.99,
+          "units_sold": 442,
+          "revenue": 194508.08
+        },
+        {
+          "month": "2024-04",
+          "avg_price": 446.79,
+          "min_price": 385.55,
+          "max_price": 453.59,
+          "units_sold": 456,
+          "revenue": 203503.08
+        },
+        {
+          "month": "2024-05",
+          "avg_price": 442.62,
+          "min_price": 385.55,
+          "max_price": 453.59,
+          "units_sold": 562,
+          "revenue": 245528.06
+        },
+        {
+          "month": "2024-06",
+          "avg_price": 444.52,
+          "min_price": 385.55,
+          "max_price": 453.59,
+          "units_sold": 530,
+          "revenue": 233734.78
+        },
+        {
+          "month": "2024-07",
+          "avg_price": 452.77,
+          "min_price": 388.61,
+          "max_price": 457.19,
+          "units_sold": 519,
+          "revenue": 234332.67
+        },
+        {
+          "month": "2024-08",
+          "avg_price": 441.7,
+          "min_price": 388.61,
+          "max_price": 457.19,
+          "units_sold": 533,
+          "revenue": 232709.47
+        },
+        {
+          "month": "2024-09",
+          "avg_price": 450.33,
+          "min_price": 388.61,
+          "max_price": 457.19,
+          "units_sold": 439,
+          "revenue": 196660.19
+        },
+        {
+          "month": "2024-10",
+          "avg_price": 458.56,
+          "min_price": 391.67,
+          "max_price": 460.79,
+          "units_sold": 398,
+          "revenue": 182564.98
+        },
+        {
+          "month": "2024-11",
+          "avg_price": 440.05,
+          "min_price": 391.67,
+          "max_price": 460.79,
+          "units_sold": 524,
+          "revenue": 227491.72
+        },
+        {
+          "month": "2024-12",
+          "avg_price": 451.87,
+          "min_price": 391.67,
+          "max_price": 460.79,
+          "units_sold": 480,
+          "revenue": 215580.48
+        },
+        {
+          "month": "2025-01",
+          "avg_price": 459.01,
+          "min_price": 392.05,
+          "max_price": 461.24,
+          "units_sold": 344,
+          "revenue": 157421.14
+        },
+        {
+          "month": "2025-02",
+          "avg_price": 453.83,
+          "min_price": 392.05,
+          "max_price": 461.24,
+          "units_sold": 341,
+          "revenue": 153823.34
+        },
+        {
+          "month": "2025-03",
+          "avg_price": 456.78,
+          "min_price": 392.05,
+          "max_price": 461.24,
+          "units_sold": 419,
+          "revenue": 190422.77
+        },
+        {
+          "month": "2025-04",
+          "avg_price": 462.61,
+          "min_price": 395.19,
+          "max_price": 464.93,
+          "units_sold": 457,
+          "revenue": 210799.25
+        },
+        {
+          "month": "2025-05",
+          "avg_price": 458.18,
+          "min_price": 395.19,
+          "max_price": 464.93,
+          "units_sold": 541,
+          "revenue": 246645.33
+        },
+        {
+          "month": "2025-06",
+          "avg_price": 462.61,
+          "min_price": 395.19,
+          "max_price": 464.93,
+          "units_sold": 513,
+          "revenue": 236905.07
+        },
+        {
+          "month": "2025-07",
+          "avg_price": 459.55,
+          "min_price": 398.33,
+          "max_price": 468.62,
+          "units_sold": 534,
+          "revenue": 243424.95
+        },
+        {
+          "month": "2025-08",
+          "avg_price": 457.28,
+          "min_price": 398.33,
+          "max_price": 468.62,
+          "units_sold": 528,
+          "revenue": 239910.33
+        },
+        {
+          "month": "2025-09",
+          "avg_price": 454.56,
+          "min_price": 398.33,
+          "max_price": 468.62,
+          "units_sold": 453,
+          "revenue": 203920.35
+        },
+        {
+          "month": "2025-10",
+          "avg_price": 460.88,
+          "min_price": 401.46,
+          "max_price": 472.31,
+          "units_sold": 421,
+          "revenue": 192324.31
+        },
+        {
+          "month": "2025-11",
+          "avg_price": 453.42,
+          "min_price": 401.46,
+          "max_price": 472.31,
+          "units_sold": 528,
+          "revenue": 237193.48
+        },
+        {
+          "month": "2025-12",
+          "avg_price": 460.5,
+          "min_price": 401.46,
+          "max_price": 472.31,
+          "units_sold": 446,
+          "revenue": 202998.46
+        }
+      ]
     }
   ],
   "monthly_patterns": [
     {
       "month": "2024-01",
-      "units": 7351,
-      "revenue": 709567.49
+      "units": 14654,
+      "revenue": 1395484.71,
+      "avg_price": 122.85
     },
     {
       "month": "2024-02",
-      "units": 7555,
-      "revenue": 732454.95
+      "units": 14637,
+      "revenue": 1394604.13,
+      "avg_price": 123.41
     },
     {
       "month": "2024-03",
-      "units": 9171,
-      "revenue": 887227.79
+      "units": 18731,
+      "revenue": 1759271.19,
+      "avg_price": 122.25
     },
     {
       "month": "2024-04",
-      "units": 10165,
-      "revenue": 966494.35
+      "units": 19523,
+      "revenue": 1853043.73,
+      "avg_price": 123.17
     },
     {
       "month": "2024-05",
-      "units": 10673,
-      "revenue": 1060299.27
+      "units": 22697,
+      "revenue": 2125637.96,
+      "avg_price": 122.02
     },
     {
       "month": "2024-06",
-      "units": 10711,
-      "revenue": 1072579.39
+      "units": 22738,
+      "revenue": 2146432.77,
+      "avg_price": 122.54
     },
     {
       "month": "2024-07",
-      "units": 11111,
-      "revenue": 1079488.89
+      "units": 21528,
+      "revenue": 2076885.33,
+      "avg_price": 124.82
     },
     {
       "month": "2024-08",
-      "units": 10426,
-      "revenue": 1015999.74
+      "units": 22154,
+      "revenue": 2063211.3,
+      "avg_price": 121.77
     },
     {
       "month": "2024-09",
-      "units": 9266,
-      "revenue": 879669.34
+      "units": 18340,
+      "revenue": 1749532.43,
+      "avg_price": 124.15
     },
     {
       "month": "2024-10",
-      "units": 8173,
-      "revenue": 793110.77
+      "units": 15987,
+      "revenue": 1570762.0,
+      "avg_price": 126.42
     },
     {
       "month": "2024-11",
-      "units": 10490,
-      "revenue": 999394.6
+      "units": 21751,
+      "revenue": 2020756.59,
+      "avg_price": 121.31
     },
     {
       "month": "2024-12",
-      "units": 9537,
-      "revenue": 925856.13
+      "units": 20075,
+      "revenue": 1927740.68,
+      "avg_price": 124.57
     },
     {
       "month": "2025-01",
-      "units": 7258,
-      "revenue": 705597.42
+      "units": 14651,
+      "revenue": 1428739.4,
+      "avg_price": 126.54
     },
     {
       "month": "2025-02",
-      "units": 6876,
-      "revenue": 684496.74
+      "units": 14795,
+      "revenue": 1411610.5,
+      "avg_price": 125.11
     },
     {
       "month": "2025-03",
-      "units": 9287,
-      "revenue": 899336.13
+      "units": 18121,
+      "revenue": 1758517.6,
+      "avg_price": 125.92
     },
     {
       "month": "2025-04",
-      "units": 9667,
-      "revenue": 947978.83
+      "units": 18874,
+      "revenue": 1875394.09,
+      "avg_price": 127.53
     },
     {
       "month": "2025-05",
-      "units": 11083,
-      "revenue": 1092946.67
+      "units": 22207,
+      "revenue": 2159987.01,
+      "avg_price": 126.31
     },
     {
       "month": "2025-06",
-      "units": 10699,
-      "revenue": 1076873.01
+      "units": 21619,
+      "revenue": 2131005.87,
+      "avg_price": 127.53
     },
     {
       "month": "2025-07",
-      "units": 11103,
-      "revenue": 1080132.97
+      "units": 22421,
+      "revenue": 2172895.6,
+      "avg_price": 126.69
     },
     {
       "month": "2025-08",
-      "units": 10607,
-      "revenue": 1029747.43
+      "units": 21715,
+      "revenue": 2111089.72,
+      "avg_price": 126.06
     },
     {
       "month": "2025-09",
-      "units": 9074,
-      "revenue": 877223.26
+      "units": 18872,
+      "revenue": 1815637.48,
+      "avg_price": 125.31
     },
     {
       "month": "2025-10",
-      "units": 8674,
-      "revenue": 816604.26
+      "units": 17438,
+      "revenue": 1699979.57,
+      "avg_price": 127.06
     },
     {
       "month": "2025-11",
-      "units": 10235,
-      "revenue": 975180.15
+      "units": 21498,
+      "revenue": 2078902.76,
+      "avg_price": 125.0
     },
     {
       "month": "2025-12",
-      "units": 9304,
-      "revenue": 896541.96
+      "units": 19504,
+      "revenue": 1892534.85,
+      "avg_price": 126.95
     }
   ],
   "day_of_week_patterns": [
     {
       "day": "Monday",
-      "avg_units": 34.4
-    },
-    {
-      "day": "Tuesday",
       "avg_units": 34.0
     },
     {
+      "day": "Tuesday",
+      "avg_units": 35.6
+    },
+    {
       "day": "Wednesday",
-      "avg_units": 33.7
+      "avg_units": 33.9
     },
     {
       "day": "Thursday",
-      "avg_units": 33.4
+      "avg_units": 34.3
     },
     {
       "day": "Friday",
-      "avg_units": 45.4
+      "avg_units": 47.6
     },
     {
       "day": "Saturday",
-      "avg_units": 46.1
+      "avg_units": 47.4
     },
     {
       "day": "Sunday",
-      "avg_units": 47.0
+      "avg_units": 45.7
     }
   ]
 }
