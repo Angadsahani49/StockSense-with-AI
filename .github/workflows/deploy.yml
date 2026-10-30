@@ -17,7 +17,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
+  # Build job: compiles the React/Vite application into static dist/
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -34,28 +35,31 @@ jobs:
       - name: Build Web Application
         run: npm run build
 
-      # Step A: Deploy to gh-pages branch (Universally works even if Pages is on default settings)
+      # Universal Deployment: Pushes built dist folder to gh-pages branch
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
 
-      # Step B: Native GitHub Actions Pages deployment (Active when Source is set to GitHub Actions)
-      - name: Setup GitHub Pages
-        id: pages_setup
-        continue-on-error: true
-        uses: actions/configure-pages@v5
-
+      # Upload Pages artifact for native GitHub Actions Pages
       - name: Upload Pages Artifact
-        if: steps.pages_setup.outcome == 'success'
-        continue-on-error: true
         uses: actions/upload-pages-artifact@v3
         with:
           path: './dist'
 
-      - name: Deploy to GitHub Pages Native
-        if: steps.pages_setup.outcome == 'success'
-        continue-on-error: true
+  # Deployment job: publishes the artifact to GitHub Pages environment
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
         id: deployment
+        continue-on-error: true
         uses: actions/deploy-pages@v4
