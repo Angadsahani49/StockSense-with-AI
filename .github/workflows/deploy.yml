@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -18,9 +18,6 @@ concurrency:
 
 jobs:
   build-and-deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -37,14 +34,28 @@ jobs:
       - name: Build Web Application
         run: npm run build
 
+      # Step A: Deploy to gh-pages branch (Universally works even if Pages is on default settings)
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+
+      # Step B: Native GitHub Actions Pages deployment (Active when Source is set to GitHub Actions)
       - name: Setup GitHub Pages
+        id: pages_setup
+        continue-on-error: true
         uses: actions/configure-pages@v5
 
-      - name: Upload Artifact
+      - name: Upload Pages Artifact
+        if: steps.pages_setup.outcome == 'success'
+        continue-on-error: true
         uses: actions/upload-pages-artifact@v3
         with:
           path: './dist'
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages Native
+        if: steps.pages_setup.outcome == 'success'
+        continue-on-error: true
         id: deployment
         uses: actions/deploy-pages@v4

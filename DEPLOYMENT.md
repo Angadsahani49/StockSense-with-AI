@@ -31,12 +31,16 @@ git remote add origin https://github.com/<YOUR-USERNAME>/<YOUR-REPO-NAME>.git
 git push -u origin main
 ```
 
-### Step 2: Enable GitHub Pages in 2 Clicks
-1. On GitHub, navigate to your repository.
+### Step 2: Enable GitHub Pages in Your Repository Settings
+1. On GitHub, navigate to your repository `StockSense-with-AI`.
 2. Click **Settings** (top tab) &rarr; **Pages** (in the left sidebar).
-3. Under **Build and deployment** &rarr; **Source**, select **GitHub Actions** from the dropdown menu (instead of "Deploy from a branch").
-4. That's it! GitHub Actions will automatically trigger `.github/workflows/deploy.yml`.
-5. Once complete (~1 minute), your live website URL will appear at:
+3. Under **Build and deployment** &rarr; **Source**:
+   - **Option A (Recommended):** Select **GitHub Actions** from the dropdown.
+   - **Option B:** Select **Deploy from a branch** &rarr; choose branch `gh-pages` and folder `/ (root)` &rarr; click **Save**.
+4. Both options are supported by the workflow:
+   - The workflow deploys directly to the `gh-pages` branch via `peaceiris/actions-gh-pages@v4`.
+   - It also natively deploys via GitHub Pages artifact upload without failing if Pages is in the setup process.
+5. Once complete, your live website will be live at:
    ```
    https://<YOUR-USERNAME>.github.io/<YOUR-REPO-NAME>/
    ```
