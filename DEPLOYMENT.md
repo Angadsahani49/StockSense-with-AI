@@ -31,19 +31,20 @@ git remote add origin https://github.com/<YOUR-USERNAME>/<YOUR-REPO-NAME>.git
 git push -u origin main
 ```
 
-### Step 2: Enable GitHub Pages in Your Repository Settings
+### Step 2: Set GitHub Pages Source to `gh-pages` Branch
 1. On GitHub, navigate to your repository `StockSense-with-AI`.
-2. Click **Settings** (top tab) &rarr; **Pages** (in the left sidebar).
+2. Click **Settings** (top tab) &rarr; **Pages** (in the left sidebar menu).
 3. Under **Build and deployment** &rarr; **Source**:
-   - **Option A (Recommended):** Select **GitHub Actions** from the dropdown.
-   - **Option B:** Select **Deploy from a branch** &rarr; choose branch `gh-pages` and folder `/ (root)` &rarr; click **Save**.
-4. Both options are supported by the workflow:
-   - The workflow deploys directly to the `gh-pages` branch via `peaceiris/actions-gh-pages@v4`.
-   - It also natively deploys via GitHub Pages artifact upload without failing if Pages is in the setup process.
-5. Once complete, your live website will be live at:
+   - Keep or select **Deploy from a branch**.
+   - Under **Branch**, select **`gh-pages`** and folder **`/ (root)`**.
+   - Click **Save**.
+4. The workflow will push the built website to the `gh-pages` branch, bypassing all environment protection rule restrictions.
+5. In ~30 seconds, your site is live at:
    ```
-   https://<YOUR-USERNAME>.github.io/<YOUR-REPO-NAME>/
+   https://angadsahani49.github.io/StockSense-with-AI/
    ```
+
+*(Alternative fix for environment protection rule: If you want to use GitHub Actions native deployment instead, go to **Settings &rarr; Environments &rarr; github-pages &rarr; Deployment branches** and click **Add deployment branch rule** &rarr; type `main` &rarr; click **Add rule**).*
 
 *(Note: `vite.config.ts` is configured with `base: './'`, ensuring all assets load without 404s on any GitHub Pages subpath).*
 
